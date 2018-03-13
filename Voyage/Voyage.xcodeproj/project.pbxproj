@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		436585592057FDE7009F430B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436585582057FDE7009F430B /* AppDelegate.swift */; };
-		4365855B2057FDE7009F430B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365855A2057FDE7009F430B /* ViewController.swift */; };
+		4365855B2057FDE7009F430B /* TouristSitesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365855A2057FDE7009F430B /* TouristSitesVC.swift */; };
 		4365855E2057FDE7009F430B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4365855C2057FDE7009F430B /* Main.storyboard */; };
 		436585602057FDE7009F430B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4365855F2057FDE7009F430B /* Assets.xcassets */; };
 		436585632057FDE7009F430B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436585612057FDE7009F430B /* LaunchScreen.storyboard */; };
 		4365856E2057FDE7009F430B /* VoyageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365856D2057FDE7009F430B /* VoyageTests.swift */; };
+		43658579205809AA009F430B /* TouristSiteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658578205809AA009F430B /* TouristSiteTableViewCell.xib */; };
+		4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */; };
+		4365857F2058190E009F430B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365857E2058190E009F430B /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,7 @@
 /* Begin PBXFileReference section */
 		436585552057FDE7009F430B /* Voyage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436585582057FDE7009F430B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4365855A2057FDE7009F430B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4365855A2057FDE7009F430B /* TouristSitesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSitesVC.swift; sourceTree = "<group>"; };
 		4365855D2057FDE7009F430B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4365855F2057FDE7009F430B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		436585622057FDE7009F430B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		436585692057FDE7009F430B /* VoyageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoyageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4365856D2057FDE7009F430B /* VoyageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageTests.swift; sourceTree = "<group>"; };
 		4365856F2057FDE7009F430B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43658578205809AA009F430B /* TouristSiteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouristSiteTableViewCell.xib; sourceTree = "<group>"; };
+		4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSiteTableViewCell.swift; sourceTree = "<group>"; };
+		4365857E2058190E009F430B /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				436585582057FDE7009F430B /* AppDelegate.swift */,
-				4365855A2057FDE7009F430B /* ViewController.swift */,
+				4365855A2057FDE7009F430B /* TouristSitesVC.swift */,
+				4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */,
+				4365857E2058190E009F430B /* DetailVC.swift */,
 				4365855C2057FDE7009F430B /* Main.storyboard */,
+				43658578205809AA009F430B /* TouristSiteTableViewCell.xib */,
 				4365855F2057FDE7009F430B /* Assets.xcassets */,
 				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
 				436585642057FDE7009F430B /* Info.plist */,
@@ -181,6 +190,7 @@
 			files = (
 				436585632057FDE7009F430B /* LaunchScreen.storyboard in Resources */,
 				436585602057FDE7009F430B /* Assets.xcassets in Resources */,
+				43658579205809AA009F430B /* TouristSiteTableViewCell.xib in Resources */,
 				4365855E2057FDE7009F430B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4365855B2057FDE7009F430B /* ViewController.swift in Sources */,
+				4365855B2057FDE7009F430B /* TouristSitesVC.swift in Sources */,
+				4365857F2058190E009F430B /* DetailVC.swift in Sources */,
 				436585592057FDE7009F430B /* AppDelegate.swift in Sources */,
+				4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
