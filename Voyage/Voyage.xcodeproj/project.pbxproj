@@ -16,6 +16,7 @@
 		43658579205809AA009F430B /* TouristSiteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43658578205809AA009F430B /* TouristSiteTableViewCell.xib */; };
 		4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */; };
 		4365857F2058190E009F430B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365857E2058190E009F430B /* DetailVC.swift */; };
+		4365858120581CA4009F430B /* TouristSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858020581CA4009F430B /* TouristSite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		43658578205809AA009F430B /* TouristSiteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouristSiteTableViewCell.xib; sourceTree = "<group>"; };
 		4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSiteTableViewCell.swift; sourceTree = "<group>"; };
 		4365857E2058190E009F430B /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		4365858020581CA4009F430B /* TouristSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				4365855A2057FDE7009F430B /* TouristSitesVC.swift */,
 				4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */,
 				4365857E2058190E009F430B /* DetailVC.swift */,
+				4365858020581CA4009F430B /* TouristSite.swift */,
 				4365855C2057FDE7009F430B /* Main.storyboard */,
 				43658578205809AA009F430B /* TouristSiteTableViewCell.xib */,
 				4365855F2057FDE7009F430B /* Assets.xcassets */,
@@ -213,6 +216,7 @@
 				4365857F2058190E009F430B /* DetailVC.swift in Sources */,
 				436585592057FDE7009F430B /* AppDelegate.swift in Sources */,
 				4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */,
+				4365858120581CA4009F430B /* TouristSite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
