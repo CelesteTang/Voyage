@@ -14,13 +14,13 @@ struct TouristSite: Codable {
     let description: String
     let images: String
     let address: String
-    let info: String
+    let info: String?
     
     enum CodingKeys: String, CodingKey {
         case title = "stitle"
         case description = "xbody"
         case images = "file"
-        case address
-        case info
+        case address = "address"
+        case info = "info"
     }
 }
