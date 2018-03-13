@@ -86,14 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				436585582057FDE7009F430B /* AppDelegate.swift */,
-				4365855A2057FDE7009F430B /* TouristSitesVC.swift */,
-				4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */,
-				4365857E2058190E009F430B /* DetailVC.swift */,
-				4365858020581CA4009F430B /* TouristSite.swift */,
-				4365855C2057FDE7009F430B /* Main.storyboard */,
-				43658578205809AA009F430B /* TouristSiteTableViewCell.xib */,
-				4365855F2057FDE7009F430B /* Assets.xcassets */,
-				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
+				436585872058204D009F430B /* Models */,
+				436585862058203D009F430B /* Views */,
+				4365858520582030009F430B /* ViewControllers */,
 				436585642057FDE7009F430B /* Info.plist */,
 			);
 			path = Voyage;
@@ -106,6 +101,35 @@
 				4365856F2057FDE7009F430B /* Info.plist */,
 			);
 			path = VoyageTests;
+			sourceTree = "<group>";
+		};
+		4365858520582030009F430B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4365855A2057FDE7009F430B /* TouristSitesVC.swift */,
+				4365857E2058190E009F430B /* DetailVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		436585862058203D009F430B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4365855C2057FDE7009F430B /* Main.storyboard */,
+				4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */,
+				43658578205809AA009F430B /* TouristSiteTableViewCell.xib */,
+				4365855F2057FDE7009F430B /* Assets.xcassets */,
+				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		436585872058204D009F430B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4365858020581CA4009F430B /* TouristSite.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
