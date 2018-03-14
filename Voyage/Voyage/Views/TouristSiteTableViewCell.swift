@@ -22,14 +22,26 @@ class TouristSiteTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        configureCollectionView()
+        configureLabel()
+    }
+    
+    private func configureCollectionView() {
         let nib = UINib(nibName: "ImageCollectionViewCell", bundle: nil)
         imagesCollectionView.register(nib, forCellWithReuseIdentifier: "ImageCollectionViewCell")
         imagesCollectionView.dataSource = self
         
-        let layout = self.imagesCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let layout = imagesCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: 200, height: 150)
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
+    }
+    
+    private func configureLabel() {
+        titleLabel?.textColor = UIColor.gray
+        descriptionLabel.textColor = UIColor.gray
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        descriptionLabel.font = UIFont.systemFont(ofSize: 14)
     }
     
     func configure(touristSite: TouristSite) {
