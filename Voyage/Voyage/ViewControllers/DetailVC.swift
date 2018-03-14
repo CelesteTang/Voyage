@@ -19,6 +19,23 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureTableView()
+        configureNavigationBar()
+        configurePageView()
+    }
+
+    private func configureTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.allowsSelection = false
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    private func configureNavigationBar() {
+        navigationItem.title = touristSite.title
+    }
+    
+    private func configurePageView() {
         let pageVC = storyboard?.instantiateViewController(withIdentifier: "ImagePageVC") as! ImagePageVC
         pageVC.touristSite = touristSite
         imagePageView.addSubview(pageVC.view)
@@ -30,11 +47,40 @@ class DetailVC: UIViewController {
             pageVC.view.bottomAnchor.constraint(equalTo: imagePageView.bottomAnchor),
             pageVC.view.trailingAnchor.constraint(equalTo: imagePageView.trailingAnchor)
         ])
-        
-        configureNavigationBar()
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension DetailVC: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        configureCell(cell, at: indexPath)
+        return cell
     }
 
-    private func configureNavigationBar() {
-        navigationItem.title = touristSite.title
+    private func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
+        let titles = ["景點名稱", "景點介紹", "地址", "資訊"]
+        let contents = [touristSite.title, touristSite.description, touristSite.address, touristSite.info]
+        
+        cell.textLabel?.text = titles[indexPath.row]
+        cell.detailTextLabel?.text = contents[indexPath.row]
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
+        cell.detailTextLabel?.numberOfLines = 0
+        cell.textLabel?.textColor = UIColor.lightGray
+        cell.detailTextLabel?.textColor = UIColor.gray
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension DetailVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 8.0
     }
 }
