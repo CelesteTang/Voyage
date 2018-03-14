@@ -8,61 +8,23 @@
 
 import UIKit
 
-enum GeneralError: Error {
-    
-    case formURLFail
-}
-
 class TouristSitesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var dataLoader: DataLoader? = nil
-    private var requestToken: RequestToken? = nil
-    
     var touristSites: [TouristSite] = []
     
+    private var touristSiteProvider: TouristSiteProvider? = nil
+
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.dataLoader = DataLoader()
-
-        self.getData { (touristSites, error) in
-            
-            if let error = error {
-                print("[ViewController] Error: \(error.localizedDescription)")
-            }
-            
-            if let touristSites = touristSites {
-                self.touristSites = touristSites
-            }
-        }
+        touristSiteProvider = TouristSiteProvider()
+        fetchTouristSites()
         
         configureTableView()
-    }
-    
-    private func getData(completionHandler: @escaping ([TouristSite]?, Error?) -> Swift.Void) {
-        
-        requestToken?.cancel()
-        
-        guard let url = URL(string: Config.url) else {
-            completionHandler(nil, GeneralError.formURLFail)
-            return
-        }
-        
-        requestToken = dataLoader?.getData(url: url, completionHandler: { result in
-            
-            switch result {
-                
-            case .success(let touristSites):
-                
-                completionHandler(touristSites, nil)
-                
-            case .error(let error):
-                
-                completionHandler(nil, error)
-            }
-        })
+
     }
     
     private func configureTableView() {
@@ -72,8 +34,21 @@ class TouristSitesVC: UIViewController {
         tableView.delegate = self
     }
 
+    private func fetchTouristSites() {
+        touristSiteProvider?.getTouristSites { (touristSites, error) in
+            
+            if let error = error {
+                print("[ViewController] Error: \(error.localizedDescription)")
+            }
+            
+            if let touristSites = touristSites {
+                self.touristSites = touristSites
+            }
+        }
+    }
 }
 
+// MARK: - UITableViewDataSource
 extension TouristSitesVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,6 +62,7 @@ extension TouristSitesVC: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension TouristSitesVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

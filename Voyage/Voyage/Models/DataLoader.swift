@@ -13,6 +13,9 @@ enum NetworkError: Error {
     case dataTaskError
     
     case parseError
+    
+    case formURLFail
+
 }
 
 enum Result<T> {
@@ -27,7 +30,8 @@ class DataLoader {
     let session = URLSession.shared
     
     @discardableResult
-    func getData(url: URL, headers: [String: String]? = nil, completionHandler: @escaping (Result<[TouristSite]>) -> Void) -> RequestToken {
+    func getData(url: URL, headers: [String: String]? = nil,
+                 completionHandler: @escaping (Result<Data>) -> Void) -> RequestToken {
         
         let request: URLRequest = {
             var request = URLRequest(url: url)
@@ -35,8 +39,7 @@ class DataLoader {
             return request
         }()
         
-        
-        let task = session.dataTask(with: request) { (data, response, error) in
+        let task = session.dataTask(with: request) { (data, _, error) in
             
             switch (data, error) {
                 
@@ -46,36 +49,13 @@ class DataLoader {
                 
             case (let data?, _):
                 
-                let decoder = JSONDecoder()
-                
-                do {
-                    
-                    let sitesData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]
-                    
-                    guard let result = sitesData?["result"] as? [String: AnyObject],
-                    let sitesArray = result["results"] as? [AnyObject] else {
-                            return
-                    }
-                    
-                    let sitesArrayData = try JSONSerialization.data(withJSONObject: sitesArray, options: .prettyPrinted)
-                    
-                    let sites = try decoder.decode([TouristSite].self, from: sitesArrayData)
-                    
-                    completionHandler(.success(sites))
-                    
-                } catch {
-                    
-                    completionHandler(.error(error))
-                    
-                }
+                completionHandler(.success(data))
                 
             case (nil, nil):
                 
                 completionHandler(.error(NetworkError.dataTaskError))
                 
-            default:
-                
-                break
+            default: break
                 
             }
         }

@@ -19,7 +19,7 @@
 		4365858120581CA4009F430B /* TouristSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858020581CA4009F430B /* TouristSite.swift */; };
 		4365858920582252009F430B /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858820582252009F430B /* DataLoader.swift */; };
 		4365858B2058226F009F430B /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858A2058226F009F430B /* RequestToken.swift */; };
-		4365858D205824A2009F430B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858C205824A2009F430B /* Config.swift */; };
+		4365858F2058A68E009F430B /* TouristSiteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858E2058A68E009F430B /* TouristSiteProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		4365858020581CA4009F430B /* TouristSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSite.swift; sourceTree = "<group>"; };
 		4365858820582252009F430B /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		4365858A2058226F009F430B /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
-		4365858C205824A2009F430B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4365858E2058A68E009F430B /* TouristSiteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSiteProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				436585582057FDE7009F430B /* AppDelegate.swift */,
-				4365858C205824A2009F430B /* Config.swift */,
 				436585872058204D009F430B /* Models */,
 				436585862058203D009F430B /* Views */,
 				4365858520582030009F430B /* ViewControllers */,
@@ -137,6 +136,7 @@
 				4365858020581CA4009F430B /* TouristSite.swift */,
 				4365858820582252009F430B /* DataLoader.swift */,
 				4365858A2058226F009F430B /* RequestToken.swift */,
+				4365858E2058A68E009F430B /* TouristSiteProvider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 				4365858B2058226F009F430B /* RequestToken.swift in Sources */,
 				4365858920582252009F430B /* DataLoader.swift in Sources */,
 				436585592057FDE7009F430B /* AppDelegate.swift in Sources */,
-				4365858D205824A2009F430B /* Config.swift in Sources */,
+				4365858F2058A68E009F430B /* TouristSiteProvider.swift in Sources */,
 				4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */,
 				4365858120581CA4009F430B /* TouristSite.swift in Sources */,
 			);
