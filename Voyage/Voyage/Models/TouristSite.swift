@@ -24,7 +24,7 @@ struct TouristSite: Codable {
         case info = "info"
     }
     
-    var imageURLs: [String] {
+    var imageURLs: [URL] {
         return file.toURLArray()
     }
     

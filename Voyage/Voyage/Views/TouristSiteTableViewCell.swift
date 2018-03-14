@@ -50,33 +50,19 @@ class TouristSiteTableViewCell: UITableViewCell {
         titleLabel.text = touristSite.title
         descriptionLabel.text = touristSite.description
         
+        images = []
+        
         touristSite.imageURLs.forEach { url in
             
-            DispatchQueue.global().async {
-                
-                do {
-                    guard let url = URL(string: url) else {
-                        return
-                    }
-                    
-                    let data = try Data(contentsOf: url)
-                    
-                    guard let image = UIImage(data: data) else {
-                        return
-                    }
-                    
-                    DispatchQueue.main.async {
-                        self.images.append(image)
-                        self.imagesCollectionView.reloadData()
-                    }
-                    
-                } catch {
-                    
-                    print(error.localizedDescription)
-                    
+            if let image = url.cachedImage(touristSite: touristSite.title) {
+                self.images.append(image)
+                self.imagesCollectionView.reloadData()
+            } else {
+                url.fetchImage(of: touristSite.title) { image in
+                    self.images.append(image)
+                    self.imagesCollectionView.reloadData()
                 }
             }
-            
         }
     }
 }

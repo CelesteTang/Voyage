@@ -31,10 +31,7 @@ class ImagePageVC: UIPageViewController {
             DispatchQueue.global().async {
                 
                 do {
-                    guard let url = URL(string: url) else {
-                        return
-                    }
-                    
+
                     let data = try Data(contentsOf: url)
                     
                     guard let image = UIImage(data: data) else {
