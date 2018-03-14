@@ -23,6 +23,8 @@
 		436585922058C678009F430B /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436585912058C678009F430B /* String + Ext.swift */; };
 		437149A92058D59900795899 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149A72058D59900795899 /* ImageCollectionViewCell.swift */; };
 		437149AA2058D59900795899 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437149A82058D59900795899 /* ImageCollectionViewCell.xib */; };
+		437149AC2058F34B00795899 /* ImagePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149AB2058F34B00795899 /* ImagePageVC.swift */; };
+		437149AE2058F36F00795899 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149AD2058F36F00795899 /* ImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		436585912058C678009F430B /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
 		437149A72058D59900795899 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		437149A82058D59900795899 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		437149AB2058F34B00795899 /* ImagePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageVC.swift; sourceTree = "<group>"; };
+		437149AD2058F36F00795899 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 			children = (
 				4365855A2057FDE7009F430B /* TouristSitesVC.swift */,
 				4365857E2058190E009F430B /* DetailVC.swift */,
+				437149AB2058F34B00795899 /* ImagePageVC.swift */,
+				437149AD2058F36F00795899 /* ImageVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,12 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				436585922058C678009F430B /* String + Ext.swift in Sources */,
+				437149AC2058F34B00795899 /* ImagePageVC.swift in Sources */,
 				4365855B2057FDE7009F430B /* TouristSitesVC.swift in Sources */,
 				4365857F2058190E009F430B /* DetailVC.swift in Sources */,
 				4365858B2058226F009F430B /* RequestToken.swift in Sources */,
 				4365858920582252009F430B /* DataLoader.swift in Sources */,
 				436585592057FDE7009F430B /* AppDelegate.swift in Sources */,
 				437149A92058D59900795899 /* ImageCollectionViewCell.swift in Sources */,
+				437149AE2058F36F00795899 /* ImageVC.swift in Sources */,
 				4365858F2058A68E009F430B /* TouristSiteProvider.swift in Sources */,
 				4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */,
 				4365858120581CA4009F430B /* TouristSite.swift in Sources */,

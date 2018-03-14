@@ -54,29 +54,77 @@
                                 <rect key="frame" x="0.0" y="281.5" width="375" height="385.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fdn-Wv-n7g">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rel-jJ-VvQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Fdn-Wv-n7g" secondAttribute="height" multiplier="4:3" id="IRT-ni-cYO"/>
+                                    <constraint firstAttribute="width" secondItem="Rel-jJ-VvQ" secondAttribute="height" multiplier="4:3" id="cEs-kw-SF9"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Now-wv-YqD" secondAttribute="trailing" id="357-Vf-Qfr"/>
-                            <constraint firstAttribute="trailing" secondItem="Fdn-Wv-n7g" secondAttribute="trailing" id="LfJ-gW-Hue"/>
+                            <constraint firstItem="Rel-jJ-VvQ" firstAttribute="top" secondItem="s6K-Md-j5J" secondAttribute="top" id="3rK-4J-Zaf"/>
+                            <constraint firstItem="Rel-jJ-VvQ" firstAttribute="leading" secondItem="s6K-Md-j5J" secondAttribute="leading" id="L9o-1Z-mib"/>
+                            <constraint firstItem="Now-wv-YqD" firstAttribute="top" secondItem="Rel-jJ-VvQ" secondAttribute="bottom" id="PZi-ln-p8m"/>
                             <constraint firstItem="Now-wv-YqD" firstAttribute="leading" secondItem="s6K-Md-j5J" secondAttribute="leading" id="Y2U-eM-4og"/>
-                            <constraint firstItem="Now-wv-YqD" firstAttribute="top" secondItem="Fdn-Wv-n7g" secondAttribute="bottom" id="eo2-VK-5k8"/>
-                            <constraint firstItem="Fdn-Wv-n7g" firstAttribute="top" secondItem="s6K-Md-j5J" secondAttribute="top" id="fGo-Q4-Dpn"/>
                             <constraint firstAttribute="bottom" secondItem="Now-wv-YqD" secondAttribute="bottom" id="fZs-rS-Kb3"/>
-                            <constraint firstItem="Fdn-Wv-n7g" firstAttribute="leading" secondItem="s6K-Md-j5J" secondAttribute="leading" id="opt-Vc-NGr"/>
+                            <constraint firstAttribute="trailing" secondItem="Rel-jJ-VvQ" secondAttribute="trailing" id="xVn-lJ-n2h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Elk-X6-cak"/>
                     </view>
+                    <connections>
+                        <outlet property="imagePageView" destination="Rel-jJ-VvQ" id="yTB-OZ-baC"/>
+                        <outlet property="tableView" destination="Now-wv-YqD" id="6SR-pZ-LyU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNM-bX-YJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1133.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Image PageVC-->
+        <scene sceneID="uVt-bD-GIV">
+            <objects>
+                <pageViewController storyboardIdentifier="ImagePageVC" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="QeG-AL-aSk" customClass="ImagePageVC" customModule="Voyage" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpw-Tn-Fv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="133"/>
+        </scene>
+        <!--ImageVC-->
+        <scene sceneID="xYb-Ml-2bR">
+            <objects>
+                <viewController storyboardIdentifier="ImageVC" id="n6A-O0-q8b" customClass="ImageVC" customModule="Voyage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfq-Y7-PfW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f1W-6z-rPM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Kyk-yM-o0L">
+                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Kyk-yM-o0L" secondAttribute="bottom" constant="20" id="61r-L0-ZcU"/>
+                            <constraint firstItem="f1W-6z-rPM" firstAttribute="leading" secondItem="tfq-Y7-PfW" secondAttribute="leading" id="YSV-yS-GKz"/>
+                            <constraint firstItem="f1W-6z-rPM" firstAttribute="top" secondItem="tfq-Y7-PfW" secondAttribute="top" id="kQf-oV-StP"/>
+                            <constraint firstAttribute="bottom" secondItem="f1W-6z-rPM" secondAttribute="bottom" id="lsu-li-1Zd"/>
+                            <constraint firstItem="Kyk-yM-o0L" firstAttribute="centerX" secondItem="tfq-Y7-PfW" secondAttribute="centerX" id="pfL-xg-uqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="f1W-6z-rPM" secondAttribute="trailing" id="r7h-Kh-m3j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VMf-3g-ckl"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="f1W-6z-rPM" id="Iod-1q-v7G"/>
+                        <outlet property="pageControl" destination="Kyk-yM-o0L" id="i8T-AU-34z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYL-Rx-E57" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2489" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ut1-00-Dfk">
