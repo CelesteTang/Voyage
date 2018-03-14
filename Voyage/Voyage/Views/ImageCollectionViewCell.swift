@@ -20,4 +20,5 @@ class ImageCollectionViewCell: UICollectionViewCell {
     func configure(image: UIImage) {
         imageView.image = image
     }
+    
 }

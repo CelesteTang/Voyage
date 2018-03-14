@@ -28,30 +28,4 @@ struct TouristSite: Codable {
         return file.toURLArray()
     }
     
-    lazy var images: [UIImage] = {
-        
-        var images = [UIImage]()
-        
-        self.imageURLs.forEach {
-            
-            guard let url = URL(string: $0) else {
-                return
-            }
-            
-            do {
-                let data = try Data(contentsOf: url)
-                guard let image = UIImage(data: data) else {
-                    return
-                }
-                images.append(image)
-                
-            } catch {
-                
-                print(error.localizedDescription)
-                
-            }
-        }
-        
-        return images
-    }()
 }

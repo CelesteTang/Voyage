@@ -17,6 +17,7 @@ class TouristSiteTableViewCell: UITableViewCell {
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     
     private var touristSite: TouristSite!
+    private var images = [UIImage]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,6 +38,34 @@ class TouristSiteTableViewCell: UITableViewCell {
         titleLabel.text = touristSite.title
         descriptionLabel.text = touristSite.description
         
+        touristSite.imageURLs.forEach { url in
+            
+            DispatchQueue.global().async {
+                
+                do {
+                    guard let url = URL(string: url) else {
+                        return
+                    }
+                    
+                    let data = try Data(contentsOf: url)
+                    
+                    guard let image = UIImage(data: data) else {
+                        return
+                    }
+                    
+                    DispatchQueue.main.async {
+                        self.images.append(image)
+                        self.imagesCollectionView.reloadData()
+                    }
+                    
+                } catch {
+                    
+                    print(error.localizedDescription)
+                    
+                }
+            }
+            
+        }
     }
 }
 
@@ -44,12 +73,12 @@ class TouristSiteTableViewCell: UITableViewCell {
 extension TouristSiteTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return touristSite.images.count
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = imagesCollectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
-        cell.configure(image: touristSite.images[indexPath.item])
+        cell.configure(image: images[indexPath.item])
         return cell
     }
     
