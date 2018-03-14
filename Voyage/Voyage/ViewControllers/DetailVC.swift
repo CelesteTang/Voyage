@@ -30,6 +30,11 @@ class DetailVC: UIViewController {
             pageVC.view.bottomAnchor.constraint(equalTo: imagePageView.bottomAnchor),
             pageVC.view.trailingAnchor.constraint(equalTo: imagePageView.trailingAnchor)
         ])
+        
+        configureNavigationBar()
     }
 
+    private func configureNavigationBar() {
+        navigationItem.title = touristSite.title
+    }
 }

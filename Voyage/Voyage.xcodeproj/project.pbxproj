@@ -25,6 +25,7 @@
 		437149AA2058D59900795899 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437149A82058D59900795899 /* ImageCollectionViewCell.xib */; };
 		437149AC2058F34B00795899 /* ImagePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149AB2058F34B00795899 /* ImagePageVC.swift */; };
 		437149AE2058F36F00795899 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149AD2058F36F00795899 /* ImageVC.swift */; };
+		437149B02059427200795899 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149AF2059427200795899 /* Palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		437149A82058D59900795899 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		437149AB2058F34B00795899 /* ImagePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageVC.swift; sourceTree = "<group>"; };
 		437149AD2058F36F00795899 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		437149AF2059427200795899 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				436585582057FDE7009F430B /* AppDelegate.swift */,
+				437149AF2059427200795899 /* Palette.swift */,
 				436585872058204D009F430B /* Models */,
 				436585862058203D009F430B /* Views */,
 				4365858520582030009F430B /* ViewControllers */,
@@ -275,6 +278,7 @@
 				4365857F2058190E009F430B /* DetailVC.swift in Sources */,
 				4365858B2058226F009F430B /* RequestToken.swift in Sources */,
 				4365858920582252009F430B /* DataLoader.swift in Sources */,
+				437149B02059427200795899 /* Palette.swift in Sources */,
 				436585592057FDE7009F430B /* AppDelegate.swift in Sources */,
 				437149A92058D59900795899 /* ImageCollectionViewCell.swift in Sources */,
 				437149AE2058F36F00795899 /* ImageVC.swift in Sources */,

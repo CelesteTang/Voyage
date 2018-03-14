@@ -24,7 +24,7 @@ class TouristSitesVC: UIViewController {
         fetchTouristSites()
         
         configureTableView()
-
+        configureNavigationBar()
     }
     
     private func configureTableView() {
@@ -34,6 +34,14 @@ class TouristSitesVC: UIViewController {
         tableView.delegate = self
     }
 
+    private func configureNavigationBar() {
+        navigationItem.title = "台北市熱門景點"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = Palette.blue
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
     private func fetchTouristSites() {
         touristSiteProvider?.getTouristSites { (touristSites, error) in
             
