@@ -21,6 +21,8 @@
 		4365858B2058226F009F430B /* RequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858A2058226F009F430B /* RequestToken.swift */; };
 		4365858F2058A68E009F430B /* TouristSiteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365858E2058A68E009F430B /* TouristSiteProvider.swift */; };
 		436585922058C678009F430B /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436585912058C678009F430B /* String + Ext.swift */; };
+		437149A92058D59900795899 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437149A72058D59900795899 /* ImageCollectionViewCell.swift */; };
+		437149AA2058D59900795899 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437149A82058D59900795899 /* ImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		4365858A2058226F009F430B /* RequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestToken.swift; sourceTree = "<group>"; };
 		4365858E2058A68E009F430B /* TouristSiteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristSiteProvider.swift; sourceTree = "<group>"; };
 		436585912058C678009F430B /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
+		437149A72058D59900795899 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		437149A82058D59900795899 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				4365855C2057FDE7009F430B /* Main.storyboard */,
 				4365857C20580F33009F430B /* TouristSiteTableViewCell.swift */,
 				43658578205809AA009F430B /* TouristSiteTableViewCell.xib */,
+				437149A72058D59900795899 /* ImageCollectionViewCell.swift */,
+				437149A82058D59900795899 /* ImageCollectionViewCell.xib */,
 				4365855F2057FDE7009F430B /* Assets.xcassets */,
 				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
 			);
@@ -239,6 +245,7 @@
 				436585602057FDE7009F430B /* Assets.xcassets in Resources */,
 				43658579205809AA009F430B /* TouristSiteTableViewCell.xib in Resources */,
 				4365855E2057FDE7009F430B /* Main.storyboard in Resources */,
+				437149AA2058D59900795899 /* ImageCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 				4365858B2058226F009F430B /* RequestToken.swift in Sources */,
 				4365858920582252009F430B /* DataLoader.swift in Sources */,
 				436585592057FDE7009F430B /* AppDelegate.swift in Sources */,
+				437149A92058D59900795899 /* ImageCollectionViewCell.swift in Sources */,
 				4365858F2058A68E009F430B /* TouristSiteProvider.swift in Sources */,
 				4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */,
 				4365858120581CA4009F430B /* TouristSite.swift in Sources */,

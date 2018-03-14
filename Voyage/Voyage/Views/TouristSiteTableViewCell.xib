@@ -11,52 +11,59 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TouristSiteTableViewCell" rowHeight="217" id="0zs-xq-m57" customClass="TouristSiteTableViewCell" customModule="Voyage" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TouristSiteTableViewCell" rowHeight="303" id="0zs-xq-m57" customClass="TouristSiteTableViewCell" customModule="Voyage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0zs-xq-m57" id="gUa-6F-l8g">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="216.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="302.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9B-Je-sAs">
-                        <rect key="frame" x="16" y="8" width="343" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="16" y="8" width="343" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iP-tD-Bcn">
-                        <rect key="frame" x="16" y="45" width="343" height="39.5"/>
-                        <mutableString key="text">北投溫泉從日據時代便有盛名，深受喜愛泡湯的日人自然不會錯過，瀧乃湯、星乃湯、鐵乃湯就是日本人依照溫泉的特性與療效給予的名稱，據說對皮膚病、神經過敏、氣喘、風濕等具有很好的療效，也因此成為了北部最著名的泡湯景點之一。新北投溫泉的泉源為大磺嘴溫泉，泉質屬硫酸鹽泉，PH值約為3~4之間，水質呈黃白色半透明，泉水溫度約為50-90℃，帶有些許的硫磺味 。目前北投的溫泉旅館、飯店、會館大部分集中於中山路、光明路沿線以及北投公園地熱谷附近，總計約有44家，每一家都各有其特色，多樣的溫泉水療以及遊憩設施，提供遊客泡湯養生，而鄰近的景點也是非常值得造訪，例如被列為三級古蹟的三寶吟松閣、星乃湯、瀧乃湯以及北投第一家溫泉旅館「天狗庵」，都有著深遠的歷史背景，而北投公園、北投溫泉博物館、北投文物館、地熱谷等，更是遊客必遊的景點，來到北投除了可以讓溫泉洗滌身心疲憊，也可以順便了解到北投溫泉豐富的人文歷史。</mutableString>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="16" y="42" width="343" height="78.5"/>
+                        <string key="text">北投溫泉從日據時代便有盛名，深受喜愛泡湯的日人自然不會錯過，瀧乃湯、星乃湯、鐵乃湯就是日本人依照溫泉的特性與療效給予的名稱，據說對皮膚病、神經過敏、氣喘、風濕等具有很好的療效，也因此成為了北部最著名的泡湯景點之一。新北投溫泉的泉源為大磺嘴溫泉，泉質屬硫酸鹽泉，PH值約為3~4之間，水質呈黃白色半透明，泉水溫度約為50-90℃，帶有些許的硫磺味 。目前北投的溫泉旅館、飯店、會館大部分集中於中山路、光明路沿線以及北投公園地熱谷附近，總計約有44家，每一家都各有其特色，多樣的溫泉水療以及遊憩設施，提供遊客泡湯養生，而鄰近的景點也是非常值得造訪，例如被列為三級古蹟的三寶吟松閣、星乃湯、瀧乃湯以及北投第一家溫泉旅館「天狗庵」，都有著深遠的歷史背景，而北投公園、北投溫泉博物館、北投文物館、地熱谷等，更是遊客必遊的景點，來到北投除了可以讓溫泉洗滌身心疲憊，也可以順便了解到北投溫泉豐富的人文歷史。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksl-3r-UuB">
-                        <rect key="frame" x="16" y="100.5" width="359" height="100"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Uzv-SI-FZ0">
+                        <rect key="frame" x="16" y="136.5" width="359" height="150"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="x1y-sZ-ZkA"/>
+                            <constraint firstAttribute="height" constant="150" id="xrg-qp-D2B"/>
                         </constraints>
-                    </view>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PcF-mX-MOc">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Ksl-3r-UuB" secondAttribute="trailing" id="1wL-fJ-HxB"/>
                     <constraint firstAttribute="trailing" secondItem="5iP-tD-Bcn" secondAttribute="trailing" constant="16" id="5Ol-0q-RbW"/>
                     <constraint firstAttribute="trailing" secondItem="B9B-Je-sAs" secondAttribute="trailing" constant="16" id="6ZK-Tx-q30"/>
+                    <constraint firstAttribute="bottom" secondItem="Uzv-SI-FZ0" secondAttribute="bottom" constant="16" id="6pa-O5-GBN"/>
+                    <constraint firstItem="Uzv-SI-FZ0" firstAttribute="leading" secondItem="gUa-6F-l8g" secondAttribute="leading" constant="16" id="7iT-h9-zDH"/>
                     <constraint firstItem="B9B-Je-sAs" firstAttribute="top" secondItem="gUa-6F-l8g" secondAttribute="top" constant="8" id="BhP-vL-A8F"/>
+                    <constraint firstItem="Uzv-SI-FZ0" firstAttribute="top" secondItem="5iP-tD-Bcn" secondAttribute="bottom" constant="16" id="ECw-7z-sLj"/>
+                    <constraint firstAttribute="trailing" secondItem="Uzv-SI-FZ0" secondAttribute="trailing" id="HVV-tZ-JFR"/>
                     <constraint firstItem="5iP-tD-Bcn" firstAttribute="top" secondItem="B9B-Je-sAs" secondAttribute="bottom" constant="16" id="KGK-WC-ai8"/>
-                    <constraint firstAttribute="bottom" secondItem="Ksl-3r-UuB" secondAttribute="bottom" constant="16" id="LMa-2d-fbJ"/>
-                    <constraint firstItem="Ksl-3r-UuB" firstAttribute="leading" secondItem="gUa-6F-l8g" secondAttribute="leading" constant="16" id="bsf-S6-Mnw"/>
-                    <constraint firstItem="Ksl-3r-UuB" firstAttribute="top" secondItem="5iP-tD-Bcn" secondAttribute="bottom" constant="16" id="eTE-xI-qcU"/>
                     <constraint firstItem="5iP-tD-Bcn" firstAttribute="leading" secondItem="gUa-6F-l8g" secondAttribute="leading" constant="16" id="gRH-ot-VUk"/>
                     <constraint firstItem="B9B-Je-sAs" firstAttribute="leading" secondItem="gUa-6F-l8g" secondAttribute="leading" constant="16" id="pbd-y6-aFO"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="5iP-tD-Bcn" id="rA8-kE-aaZ"/>
+                <outlet property="imagesCollectionView" destination="Uzv-SI-FZ0" id="LDC-c4-MMG"/>
                 <outlet property="titleLabel" destination="B9B-Je-sAs" id="O51-pL-Ijq"/>
             </connections>
-            <point key="canvasLocation" x="36.5" y="114.5"/>
+            <point key="canvasLocation" x="36.5" y="157.5"/>
         </tableViewCell>
     </objects>
 </document>

@@ -11,7 +11,12 @@ import Foundation
 extension String {
     
     func toURLArray() -> [String] {
-        return self.components(separatedBy: "http").filter{ $0 != "" }.map{ "http\($0)" }
+        return self.components(separatedBy: "http")
+            .filter{ $0 != "" && $0.isJpg()}
+            .map{ "http\($0)" }
     }
     
+    func isJpg() -> Bool {
+        return self.hasSuffix("jpg") || self.hasSuffix("JPG")
+    }
 }
