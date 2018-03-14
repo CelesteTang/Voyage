@@ -41,8 +41,11 @@ class TouristSitesVC: UIViewController {
                 print("[ViewController] Error: \(error.localizedDescription)")
             }
             
-            if let touristSites = touristSites {
-                self.touristSites = touristSites
+            DispatchQueue.main.async {
+                if let touristSites = touristSites {
+                    self.touristSites = touristSites
+                    self.tableView.reloadData()
+                }
             }
         }
     }
@@ -57,7 +60,7 @@ extension TouristSitesVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TouristSiteTableViewCell") as! TouristSiteTableViewCell
-        cell.configure()
+        cell.configure(touristSite: touristSites[indexPath.row])
         return cell
     }
 }

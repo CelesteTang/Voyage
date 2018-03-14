@@ -14,7 +14,8 @@ class TouristSiteTableViewCell: UITableViewCell {
     
     @IBOutlet weak var descriptionLabel: UILabel!
 
-    func configure() {
-        
+    func configure(touristSite: TouristSite) {
+        titleLabel.text = touristSite.title
+        descriptionLabel.text = touristSite.description
     }
 }
