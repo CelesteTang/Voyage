@@ -12,15 +12,46 @@ struct TouristSite: Codable {
     
     let title: String
     let description: String
-    let images: String
+    let file: String
     let address: String
     let info: String?
     
     enum CodingKeys: String, CodingKey {
         case title = "stitle"
         case description = "xbody"
-        case images = "file"
+        case file = "file"
         case address = "address"
         case info = "info"
     }
+    
+    var imageURLs: [String] {
+        return file.toURLArray()
+    }
+    
+    lazy var images: [UIImage] = {
+        
+        var images = [UIImage]()
+        
+        self.imageURLs.forEach {
+            
+            guard let url = URL(string: $0) else {
+                return
+            }
+            
+            do {
+                let data = try Data(contentsOf: url)
+                guard let image = UIImage(data: data) else {
+                    return
+                }
+                images.append(image)
+                
+            } catch {
+                
+                print(error.localizedDescription)
+                
+            }
+        }
+        
+        return images
+    }()
 }
