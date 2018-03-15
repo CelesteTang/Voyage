@@ -32,7 +32,6 @@ class TouristSitesVC: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "TouristSiteTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
-        
     }
 
     private func configureNavigationBar() {
@@ -43,7 +42,7 @@ class TouristSitesVC: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
     }
     
-    private func fetchTouristSites() {
+    fileprivate func fetchTouristSites() {
         touristSiteProvider?.getTouristSites { (touristSites, error) in
             
             if let error = error {
@@ -76,12 +75,11 @@ extension TouristSitesVC: UITableViewDataSource {
         cell.configure(touristSite: touristSites[indexPath.section])
         return cell
     }
-    
 }
 
 // MARK: - UITableViewDelegate
 extension TouristSitesVC: UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
@@ -99,5 +97,15 @@ extension TouristSitesVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 8.0
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        let currentOffset = scrollView.contentOffset.y
+        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
+        
+        if maximumOffset - currentOffset <= 10.0 {
+            self.fetchTouristSites()
+        }
     }
 }

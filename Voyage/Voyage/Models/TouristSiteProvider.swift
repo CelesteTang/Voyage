@@ -12,6 +12,7 @@ class TouristSiteProvider {
     
     private var dataLoader: DataLoader? = nil
     private var requestToken: RequestToken? = nil
+    private var offset = 0
     
     init() {
         dataLoader = DataLoader()
@@ -21,11 +22,11 @@ class TouristSiteProvider {
         
         requestToken?.cancel()
         
-        var offset = 0
         guard let url = URL(string: "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=36847f3f-deff-4183-a5bb-800737591de5&offset=\(offset)&limit=10") else {
             completionHandler(nil, NetworkError.formURLFail)
             return
         }
+
         offset += 10
         
         requestToken = dataLoader?.getData(url: url, completionHandler: { result in
@@ -51,7 +52,7 @@ class TouristSiteProvider {
                     let touristSites = try decoder.decode([TouristSite].self, from: sitesArrayData)
                     
                     completionHandler(touristSites, nil)
-
+                    
                 } catch {
                     
                     completionHandler(nil, error)
