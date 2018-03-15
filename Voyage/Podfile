@@ -6,6 +6,7 @@ target 'Voyage' do
   use_frameworks!
 
   # Pods for Voyage
+  pod 'ReachabilitySwift'
 
   target 'VoyageTests' do
     inherit! :search_paths
