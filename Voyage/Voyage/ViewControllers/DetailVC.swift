@@ -39,6 +39,7 @@ class DetailVC: UIViewController {
         let pageVC = storyboard?.instantiateViewController(withIdentifier: "ImagePageVC") as! ImagePageVC
         pageVC.touristSite = touristSite
         imagePageView.addSubview(pageVC.view)
+        addChildViewController(pageVC)
         pageVC.view.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([

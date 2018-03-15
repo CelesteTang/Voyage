@@ -15,9 +15,13 @@ class ImagePageVC: UIPageViewController {
 
     var pageContentViewController: ImageVC!
     
+    required init?(coder: NSCoder) {
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.dataSource = self
         
         if let startingViewController = contentViewController(at: 0) {
