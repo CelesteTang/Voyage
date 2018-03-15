@@ -15,14 +15,15 @@ class ImageVC: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     var index = 0
-    var heading = ""
-    var imageFile = ""
-
+    var images = [UIImage]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.pageControl.currentPage = index
-
+        pageControl.numberOfPages = images.count
+        pageControl.currentPage = index
+        imageView.image = images[index]
+        
     }
 
 }

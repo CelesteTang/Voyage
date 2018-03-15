@@ -11,9 +11,7 @@ import UIKit
 class ImagePageVC: UIPageViewController {
 
     var touristSite: TouristSite!
-    private var images = [UIImage]()
-
-    var pageContentViewController: ImageVC!
+    var images = [UIImage]()
     
     required init?(coder: NSCoder) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -29,52 +27,22 @@ class ImagePageVC: UIPageViewController {
             setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
             
         }
-        
-        touristSite.imageURLs.forEach { url in
-            
-            DispatchQueue.global().async {
-                
-                do {
-
-                    let data = try Data(contentsOf: url)
-                    
-                    guard let image = UIImage(data: data) else {
-                        return
-                    }
-                    
-                    DispatchQueue.main.async {
-                        self.images.append(image)
-                        self.pageContentViewController.imageView.image = self.images[self.pageContentViewController.index]
-                    }
-                    
-                } catch {
-                    
-                    print(error.localizedDescription)
-                    
-                }
-            }
-            
-        }
     }
     
     func contentViewController(at index: Int) -> ImageVC? {
         
-        if index < 0 || index >= touristSite.imageURLs.count {
+        if index < 0 || index >= images.count {
             return nil
         }
         
-        pageContentViewController = storyboard?.instantiateViewController(withIdentifier: "ImageVC") as? ImageVC
-        pageContentViewController.index = index
-        
-        return pageContentViewController
-    }
-    
-    func forward(index: Int) {
-        if let nextViewController = contentViewController(at: index + 1) {
-            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        guard let imageVC = storyboard?.instantiateViewController(withIdentifier: "ImageVC") as? ImageVC else {
+            return nil
         }
+        imageVC.images = images
+        imageVC.index = index
+        
+        return imageVC
     }
-
 }
 
 extension ImagePageVC: UIPageViewControllerDataSource {

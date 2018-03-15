@@ -15,6 +15,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var touristSite: TouristSite!
+    var images: [UIImage]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +39,10 @@ class DetailVC: UIViewController {
     private func configurePageView() {
         let pageVC = storyboard?.instantiateViewController(withIdentifier: "ImagePageVC") as! ImagePageVC
         pageVC.touristSite = touristSite
+        pageVC.images = images
+        
         imagePageView.addSubview(pageVC.view)
-        addChildViewController(pageVC)
+        
         pageVC.view.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -48,6 +51,8 @@ class DetailVC: UIViewController {
             pageVC.view.bottomAnchor.constraint(equalTo: imagePageView.bottomAnchor),
             pageVC.view.trailingAnchor.constraint(equalTo: imagePageView.trailingAnchor)
         ])
+        
+        addChildViewController(pageVC)
     }
 }
 

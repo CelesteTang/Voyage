@@ -17,7 +17,7 @@ class TouristSiteTableViewCell: UITableViewCell {
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     
     private var touristSite: TouristSite!
-    private var images = [UIImage]()
+    var images = [UIImage]()
     
     override func awakeFromNib() {
         super.awakeFromNib()

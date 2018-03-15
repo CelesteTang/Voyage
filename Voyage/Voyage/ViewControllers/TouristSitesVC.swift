@@ -32,6 +32,7 @@ class TouristSitesVC: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "TouristSiteTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
+        
     }
 
     private func configureNavigationBar() {
@@ -83,8 +84,12 @@ extension TouristSitesVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         guard let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as? DetailVC else { return }
         detailVC.touristSite = touristSites[indexPath.section]
+        let cell = tableView.cellForRow(at: indexPath) as! TouristSiteTableViewCell
+        detailVC.images = cell.images
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
