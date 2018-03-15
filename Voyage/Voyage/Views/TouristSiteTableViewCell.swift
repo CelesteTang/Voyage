@@ -57,7 +57,7 @@ class TouristSiteTableViewCell: UITableViewCell {
         
         images = []
         
-        touristSite.imageURLs.forEach { url in
+        touristSite.imageURLs.forEach { [unowned self] url in
             
             if let image = url.cachedImage(touristSite: touristSite.title) {
                 self.images.append(image)
@@ -92,7 +92,6 @@ extension TouristSiteTableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         guard let cell = collectionView.cellForItem(at: indexPath) as? ImageCollectionViewCell else {
-            print("ERROR")
             return
         }
         

@@ -41,7 +41,7 @@ class DetailVC: UIViewController {
         navigationItem.title = touristSite.title
     }
     
-    func configurePageView() {
+    private func configurePageView() {
         let pageVC = storyboard?.instantiateViewController(withIdentifier: "ImagePageVC") as! ImagePageVC
         pageVC.touristSite = touristSite
         pageVC.images = images
@@ -60,7 +60,7 @@ class DetailVC: UIViewController {
         addChildViewController(pageVC)
     }
     
-    func configureImage() {
+    private func configureImage() {
         
         let imageView = UIImageView(image: images.first)
         imagePageView.addSubview(imageView)

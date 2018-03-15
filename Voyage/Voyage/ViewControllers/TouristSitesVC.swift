@@ -39,10 +39,8 @@ class TouristSitesVC: UIViewController {
         super.viewWillAppear(animated)
         
         ReachabilityMonitor.shared.startMonitoring { [unowned self] (isNetworkConnected) in
-            if isNetworkConnected {
-                if self.noData {
-                    self.fetchTouristSites()
-                }
+            if isNetworkConnected && self.noData {
+                self.fetchTouristSites()
             }
         }
     }
@@ -70,7 +68,7 @@ class TouristSitesVC: UIViewController {
     
     fileprivate func fetchTouristSites() {
         if isNetworkConnected {
-            touristSiteProvider?.getTouristSites { (touristSites, error) in
+            touristSiteProvider?.getTouristSites { [unowned self] (touristSites, error) in
                 
                 if let error = error {
                     print("[ViewController] Error: \(error.localizedDescription)")
@@ -123,12 +121,9 @@ extension TouristSitesVC: UITableViewDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        guard let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as? DetailVC else { return }
-        detailVC.touristSite = touristSites[indexPath.section]
         let cell = tableView.cellForRow(at: indexPath) as! TouristSiteTableViewCell
-        detailVC.images = cell.images
-        detailVC.showSingleImage = false
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        showDetailVC(of: touristSites[indexPath.section], withImages: cell.images)
+
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -148,6 +143,14 @@ extension TouristSitesVC: UITableViewDelegate {
             self.fetchTouristSites()
         }
     }
+    
+    fileprivate func showDetailVC(of touristSite: TouristSite, withImages images: [UIImage]) {
+        guard let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as? DetailVC else { return }
+        detailVC.touristSite = touristSite
+        detailVC.images = images
+        detailVC.showSingleImage = images.count == 1 ? true : false
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 // MARK: - TouristSiteTableViewCellDelegate
@@ -155,11 +158,6 @@ extension TouristSitesVC: TouristSiteTableViewCellDelegate {
     
     func touristSiteTableViewCell(_ cell: TouristSiteTableViewCell, didSelect imageCell: ImageCollectionViewCell, image: UIImage) {
         
-        guard let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as? DetailVC else { return }
-        detailVC.touristSite = cell.touristSite
-        detailVC.images = [image]
-        detailVC.showSingleImage = true
-        self.navigationController?.pushViewController(detailVC, animated: true)
-    }
-    
+        showDetailVC(of: cell.touristSite, withImages: [image])
+    }    
 }

@@ -23,7 +23,6 @@ class ImageVC: UIViewController {
         pageControl.numberOfPages = images.count
         pageControl.currentPage = index
         imageView.image = images[index]
-        
     }
 
 }

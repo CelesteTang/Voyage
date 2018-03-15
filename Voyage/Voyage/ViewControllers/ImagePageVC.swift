@@ -23,9 +23,7 @@ class ImagePageVC: UIPageViewController {
         self.dataSource = self
         
         if let startingViewController = contentViewController(at: 0) {
-            
             setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
-            
         }
     }
     
@@ -45,6 +43,7 @@ class ImagePageVC: UIPageViewController {
     }
 }
 
+// MARK: - UIPageViewControllerDataSource
 extension ImagePageVC: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
