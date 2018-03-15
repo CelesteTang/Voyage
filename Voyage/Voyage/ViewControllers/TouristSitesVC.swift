@@ -72,6 +72,7 @@ class TouristSitesVC: UIViewController {
                 
                 if let error = error {
                     print("[ViewController] Error: \(error.localizedDescription)")
+                    self.showAlert(with: error)
                 }
                 
                 DispatchQueue.main.async {
@@ -84,6 +85,14 @@ class TouristSitesVC: UIViewController {
         } else {
             showNoNetworkAlert()
         }
+    }
+    
+    private func showAlert(with error: Error) {
+        let alert = UIAlertController(title: "Warning",
+                                      message: error.localizedDescription,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     private func showNoNetworkAlert() {
