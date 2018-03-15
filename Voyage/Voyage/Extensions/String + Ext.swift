@@ -11,7 +11,6 @@ import Foundation
 extension String {
     
     func toURLArray() -> [URL] {
-
         return self.components(separatedBy: "http")
             .filter{ $0 != "" && $0.isJpg()}
             .flatMap{ URL(string: "http\($0)") }

@@ -16,8 +16,8 @@ class ImageCache: NSCache<AnyObject, AnyObject> {
         self.touristSite = touristSite
         super.init()
         self.name = touristSite
-        self.countLimit = 20 // Max 20 images in memory.
-        self.totalCostLimit = 10*1024*1024 // Max 10MB used.
+        self.countLimit = 20
+        self.totalCostLimit = 10 * 1024 * 1024
     }
 }
 
@@ -28,7 +28,7 @@ extension URL {
     }
     
     func fetchImage(of touristSite: String, completion: @escaping (UIImage) -> Void) {
-        // 如果需要客製化取得資料在此做
+
         let task = URLSession.shared.dataTask(with: self) { (data, _, error) in
             if let error = error {
                 print(error.localizedDescription)

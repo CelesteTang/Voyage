@@ -27,22 +27,4 @@ struct TouristSite: Codable {
     var imageURLs: [URL] {
         return file.toURLArray()
     }
-//    
-//    lazy var images: [UIImage] = {
-//        
-//        var images = [UIImage]()
-//        
-//        imageURLs.forEach { url in
-//            
-//            if let image = url.cachedImage(touristSite: self.title) {
-//                images.append(image)
-//            } else {
-//                url.fetchImage(of: self.title) { image in
-//                    images.append(image)
-//                }
-//            }
-//        }
-//        
-//        return images
-//    }()
 }

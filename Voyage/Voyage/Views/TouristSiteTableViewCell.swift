@@ -15,9 +15,7 @@ protocol TouristSiteTableViewCellDelegate: class {
 class TouristSiteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
-
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     
     var touristSite: TouristSite!

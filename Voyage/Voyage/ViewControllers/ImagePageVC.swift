@@ -49,9 +49,7 @@ extension ImagePageVC: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        // swiftlint:disable force_cast
         var index = (viewController as! ImageVC).index
-        // swiftlint:enable force_cast
         index += 1
         
         return contentViewController(at: index)
@@ -59,9 +57,7 @@ extension ImagePageVC: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        // swiftlint:disable force_cast
         var index = (viewController as! ImageVC).index
-        // swiftlint:enable force_cast
         index -= 1
         
         return contentViewController(at: index)
