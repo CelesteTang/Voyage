@@ -12,7 +12,7 @@ class ReachabilityMonitor {
     
     static let shared = ReachabilityMonitor()
     
-    var isNetworkAvailable : Bool {
+    var isNetworkAvailable: Bool {
         return reachabilityStatus != .none
     }
     var reachabilityStatus: Reachability.Connection = .none

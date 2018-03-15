@@ -19,9 +19,7 @@ class TouristSiteProvider {
     }
     
     func getTouristSites(completionHandler: @escaping ([TouristSite]?, Error?) -> Swift.Void) {
-        
-        requestToken?.cancel()
-        
+                
         guard let url = URL(string: "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=36847f3f-deff-4183-a5bb-800737591de5&offset=\(offset)&limit=10") else {
             completionHandler(nil, NetworkError.formURLFail)
             return

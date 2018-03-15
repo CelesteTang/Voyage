@@ -17,11 +17,7 @@ class TouristSitesVC: UIViewController {
     var noData: Bool {
         return touristSites.count == 0
     }
-    
-    var isNetworkConnected: Bool {
-        return ReachabilityMonitor.shared.isNetworkAvailable
-    }
-    
+
     private var touristSiteProvider: TouristSiteProvider? = nil
 
     // MARK: - Lifecycle
@@ -67,37 +63,25 @@ class TouristSitesVC: UIViewController {
     }
     
     fileprivate func fetchTouristSites() {
-        if isNetworkConnected {
-            touristSiteProvider?.getTouristSites { [unowned self] (touristSites, error) in
-                
-                if let error = error {
-                    print("[ViewController] Error: \(error.localizedDescription)")
-                    self.showAlert(with: error)
-                }
-                
-                DispatchQueue.main.async {
-                    if let touristSites = touristSites {
-                        self.touristSites.append(contentsOf: touristSites)
-                        self.tableView.reloadData()
-                    }
+        touristSiteProvider?.getTouristSites { [unowned self] (touristSites, error) in
+            
+            if let error = error {
+                print("[ViewController] Error: \(error.localizedDescription)")
+                self.showAlert(with: error)
+            }
+            
+            DispatchQueue.main.async {
+                if let touristSites = touristSites {
+                    self.touristSites.append(contentsOf: touristSites)
+                    self.tableView.reloadData()
                 }
             }
-        } else {
-            showNoNetworkAlert()
         }
     }
     
     private func showAlert(with error: Error) {
         let alert = UIAlertController(title: "Warning",
                                       message: error.localizedDescription,
-                                      preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
-    
-    private func showNoNetworkAlert() {
-        let alert = UIAlertController(title: "Warning",
-                                      message: "There is no network connection right now. Please try again later.",
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
