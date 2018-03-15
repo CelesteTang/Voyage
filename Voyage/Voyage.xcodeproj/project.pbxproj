@@ -105,6 +105,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		430596E8205ACE680021CE9C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				437149AF2059427200795899 /* Palette.swift */,
+				432E472C2059810800E22925 /* ImageCache.swift */,
+				430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		4365854C2057FDE7009F430B = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				436585582057FDE7009F430B /* AppDelegate.swift */,
-				437149AF2059427200795899 /* Palette.swift */,
-				432E472C2059810800E22925 /* ImageCache.swift */,
-				430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */,
 				436585872058204D009F430B /* Models */,
 				436585862058203D009F430B /* Views */,
 				4365858520582030009F430B /* ViewControllers */,
 				436585902058C660009F430B /* Extensions */,
+				430596E8205ACE680021CE9C /* Helper */,
 				436585642057FDE7009F430B /* Info.plist */,
 				4365855F2057FDE7009F430B /* Assets.xcassets */,
 				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
