@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TouristSiteTableViewCellDelegate: class {
+    func touristSiteTableViewCell(_ cell: TouristSiteTableViewCell, didSelect imageCell: ImageCollectionViewCell, image: UIImage)
+}
+
 class TouristSiteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
@@ -16,8 +20,10 @@ class TouristSiteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     
-    private var touristSite: TouristSite!
+    var touristSite: TouristSite!
     var images = [UIImage]()
+    
+    weak var delegate: TouristSiteTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +36,8 @@ class TouristSiteTableViewCell: UITableViewCell {
         let nib = UINib(nibName: "ImageCollectionViewCell", bundle: nil)
         imagesCollectionView.register(nib, forCellWithReuseIdentifier: "ImageCollectionViewCell")
         imagesCollectionView.dataSource = self
-        
+        imagesCollectionView.delegate = self
+
         let layout = imagesCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: 200, height: 150)
         layout.minimumInteritemSpacing = 10
@@ -80,4 +87,17 @@ extension TouristSiteTableViewCell: UICollectionViewDataSource {
         return cell
     }
     
+}
+
+// MARK: - UICollectionViewDelegate
+extension TouristSiteTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ImageCollectionViewCell else {
+            print("ERROR")
+            return
+        }
+        
+        delegate?.touristSiteTableViewCell(self, didSelect: cell, image: images[indexPath.item])
+    }
 }

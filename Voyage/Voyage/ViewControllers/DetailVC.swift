@@ -11,18 +11,23 @@ import UIKit
 class DetailVC: UIViewController {
 
     @IBOutlet weak var imagePageView: UIView!
-    
     @IBOutlet weak var tableView: UITableView!
     
     var touristSite: TouristSite!
-    var images: [UIImage]!
+    var images = [UIImage]()
+    var showSingleImage = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureTableView()
         configureNavigationBar()
-        configurePageView()
+        
+        if showSingleImage {
+            configureImage()
+        } else {
+            configurePageView()
+        }
     }
 
     private func configureTableView() {
@@ -36,7 +41,7 @@ class DetailVC: UIViewController {
         navigationItem.title = touristSite.title
     }
     
-    private func configurePageView() {
+    func configurePageView() {
         let pageVC = storyboard?.instantiateViewController(withIdentifier: "ImagePageVC") as! ImagePageVC
         pageVC.touristSite = touristSite
         pageVC.images = images
@@ -53,6 +58,21 @@ class DetailVC: UIViewController {
         ])
         
         addChildViewController(pageVC)
+    }
+    
+    func configureImage() {
+        
+        let imageView = UIImageView(image: images.first)
+        imagePageView.addSubview(imageView)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: imagePageView.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: imagePageView.leadingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: imagePageView.bottomAnchor),
+            imageView.trailingAnchor.constraint(equalTo: imagePageView.trailingAnchor)
+        ])
     }
 }
 

@@ -51,7 +51,7 @@ class TouristSitesVC: UIViewController {
             
             DispatchQueue.main.async {
                 if let touristSites = touristSites {
-                    self.touristSites = touristSites
+                    self.touristSites.append(contentsOf: touristSites)
                     self.tableView.reloadData()
                 }
             }
@@ -72,6 +72,7 @@ extension TouristSitesVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TouristSiteTableViewCell") as! TouristSiteTableViewCell
+        cell.delegate = self
         cell.configure(touristSite: touristSites[indexPath.section])
         return cell
     }
@@ -88,6 +89,7 @@ extension TouristSitesVC: UITableViewDelegate {
         detailVC.touristSite = touristSites[indexPath.section]
         let cell = tableView.cellForRow(at: indexPath) as! TouristSiteTableViewCell
         detailVC.images = cell.images
+        detailVC.showSingleImage = false
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
@@ -108,4 +110,18 @@ extension TouristSitesVC: UITableViewDelegate {
             self.fetchTouristSites()
         }
     }
+}
+
+// MARK: - TouristSiteTableViewCellDelegate
+extension TouristSitesVC: TouristSiteTableViewCellDelegate {
+    
+    func touristSiteTableViewCell(_ cell: TouristSiteTableViewCell, didSelect imageCell: ImageCollectionViewCell, image: UIImage) {
+        
+        guard let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as? DetailVC else { return }
+        detailVC.touristSite = cell.touristSite
+        detailVC.images = [image]
+        detailVC.showSingleImage = true
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
 }
