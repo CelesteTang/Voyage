@@ -26,10 +26,8 @@ class TouristSiteProvider {
             completionHandler(nil, NetworkError.formURLFail)
             return
         }
-
-        offset += 10
         
-        requestToken = dataLoader?.getData(url: url, completionHandler: { result in
+        requestToken = dataLoader?.getData(url: url, completionHandler: { [unowned self] result in
             
             switch result {
                 
@@ -50,6 +48,8 @@ class TouristSiteProvider {
                     let sitesArrayData = try JSONSerialization.data(withJSONObject: sitesArray, options: .prettyPrinted)
                     
                     let touristSites = try decoder.decode([TouristSite].self, from: sitesArrayData)
+                    
+                    self.offset += 10
                     
                     completionHandler(touristSites, nil)
                     

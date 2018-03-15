@@ -14,6 +14,14 @@ class TouristSitesVC: UIViewController {
     
     var touristSites: [TouristSite] = []
     
+    var noData: Bool {
+        return touristSites.count == 0
+    }
+    
+    var isNetworkConnected: Bool {
+        return ReachabilityMonitor.shared.isNetworkAvailable
+    }
+    
     private var touristSiteProvider: TouristSiteProvider? = nil
 
     // MARK: - Lifecycle
@@ -25,6 +33,24 @@ class TouristSitesVC: UIViewController {
         
         configureTableView()
         configureNavigationBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        ReachabilityMonitor.shared.startMonitoring { [unowned self] (isNetworkConnected) in
+            if isNetworkConnected {
+                if self.noData {
+                    self.fetchTouristSites()
+                }
+            }
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        ReachabilityMonitor.shared.stopMonitoring()
     }
     
     private func configureTableView() {
@@ -43,19 +69,31 @@ class TouristSitesVC: UIViewController {
     }
     
     fileprivate func fetchTouristSites() {
-        touristSiteProvider?.getTouristSites { (touristSites, error) in
-            
-            if let error = error {
-                print("[ViewController] Error: \(error.localizedDescription)")
-            }
-            
-            DispatchQueue.main.async {
-                if let touristSites = touristSites {
-                    self.touristSites.append(contentsOf: touristSites)
-                    self.tableView.reloadData()
+        if isNetworkConnected {
+            touristSiteProvider?.getTouristSites { (touristSites, error) in
+                
+                if let error = error {
+                    print("[ViewController] Error: \(error.localizedDescription)")
+                }
+                
+                DispatchQueue.main.async {
+                    if let touristSites = touristSites {
+                        self.touristSites.append(contentsOf: touristSites)
+                        self.tableView.reloadData()
+                    }
                 }
             }
+        } else {
+            showNoNetworkAlert()
         }
+    }
+    
+    private func showNoNetworkAlert() {
+        let alert = UIAlertController(title: "Warning",
+                                      message: "There is no network connection right now. Please try again later.",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 

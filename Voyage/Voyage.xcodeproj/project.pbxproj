@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		254A92360A9205DF7F5FBC99 /* Pods_VoyageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03C9218B6C87D9C5839B58B /* Pods_VoyageTests.framework */; };
+		430596E7205AB08E0021CE9C /* ReachabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */; };
 		432E472D2059810800E22925 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432E472C2059810800E22925 /* ImageCache.swift */; };
 		436585592057FDE7009F430B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436585582057FDE7009F430B /* AppDelegate.swift */; };
 		4365855B2057FDE7009F430B /* TouristSitesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365855A2057FDE7009F430B /* TouristSitesVC.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMonitor.swift; sourceTree = "<group>"; };
 		432E472C2059810800E22925 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		436585552057FDE7009F430B /* Voyage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436585582057FDE7009F430B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,11 +131,14 @@
 				436585582057FDE7009F430B /* AppDelegate.swift */,
 				437149AF2059427200795899 /* Palette.swift */,
 				432E472C2059810800E22925 /* ImageCache.swift */,
+				430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */,
 				436585872058204D009F430B /* Models */,
 				436585862058203D009F430B /* Views */,
 				4365858520582030009F430B /* ViewControllers */,
 				436585902058C660009F430B /* Extensions */,
 				436585642057FDE7009F430B /* Info.plist */,
+				4365855F2057FDE7009F430B /* Assets.xcassets */,
+				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
 			);
 			path = Voyage;
 			sourceTree = "<group>";
@@ -166,8 +171,6 @@
 				43658578205809AA009F430B /* TouristSiteTableViewCell.xib */,
 				437149A72058D59900795899 /* ImageCollectionViewCell.swift */,
 				437149A82058D59900795899 /* ImageCollectionViewCell.xib */,
-				4365855F2057FDE7009F430B /* Assets.xcassets */,
-				436585612057FDE7009F430B /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				4365857D20580F33009F430B /* TouristSiteTableViewCell.swift in Sources */,
 				432E472D2059810800E22925 /* ImageCache.swift in Sources */,
 				4365858120581CA4009F430B /* TouristSite.swift in Sources */,
+				430596E7205AB08E0021CE9C /* ReachabilityMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
