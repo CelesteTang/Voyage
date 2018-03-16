@@ -7,71 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043B7E5A4BB3F788994409908FBCD768 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 275E6C6BD881C64FF5A9275414CDD168 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0647523403AF3689B514D15F55BB336C /* Pods-Voyage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF803215BB17764CA7963CC755640F3 /* Pods-Voyage-dummy.m */; };
+		09EA6F76D8BFD3EA74FFC72520A6C141 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDFB62CE8FBA6F7191D035282942A2E /* UIScrollView+InfiniteScroll.m */; };
+		11D2F5F78A5452CC3082213028362BD7 /* UIScrollView+InfiniteScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = DD121AE7D1A1BFEFD4AEFDDD79D999E1 /* UIScrollView+InfiniteScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C4A40F3E6059977F1AEA7C3CD8BF935 /* Pods-VoyageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FFA56A484674BAFC176C33E244AC6C /* Pods-VoyageTests-dummy.m */; };
-		3A4F510C48FDC56B49CCDBCCDA704381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
-		69A88D4D046784868D5F1FAECB6BFDB0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69D4187F1B8F1EEEA7A0121DE67F2B7 /* Reachability.swift */; };
-		70CAACAF48D2453AD9E3F0761B165D82 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */; };
-		7B97B4C7FF3AB536689B24E10C8C5310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		207C2CEA956BECBE3ED90C0CE868847B /* UIScrollView-InfiniteScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A39D50D951E6F840D5D47A07ABF3B /* UIScrollView-InfiniteScroll-dummy.m */; };
+		230EB2455F789E089DFC5C7FE157D13C /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9D53C716F8EC889F786EB189761892 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F18A7027DA6E93B17A479036EF0457C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D28886E7F1A53A6B897CE334ECB87 /* Reachability.swift */; };
+		50060EF4972A6F20B0869D9706D44388 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */; };
+		740F5263A01E2EB6030BE041DD6D32E5 /* Pods-Voyage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 408A172A96564553A66177EE6CE0AA21 /* Pods-Voyage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78D405EC67278B6D86813AB97051EF1A /* Pods-Voyage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF803215BB17764CA7963CC755640F3 /* Pods-Voyage-dummy.m */; };
 		909D3E45D67E52045CA65453F64C3EB9 /* Pods-VoyageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D6F7BAF0A1AC222004A06BAA086538 /* Pods-VoyageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C9015E2884F99F71FE33A62FB1170C /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B41AF65833EFCBBAE3DC48976FD015 /* ReachabilitySwift-dummy.m */; };
+		A935CFB119201D3EBBD154B4FECB3CFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
 		ABC4B727731EDF9601395C34B18710F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
-		CB3D895EBD0F588279286997AD2EF758 /* Pods-Voyage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 408A172A96564553A66177EE6CE0AA21 /* Pods-Voyage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D038C3E8210E3C0AA778083702400D49 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0173D02276968EB9711C6BF944032E /* ReachabilitySwift-dummy.m */; };
+		D5C0F8A7A4148189258C499FF45906DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		E69801D127273B94720F146FEA9EA0E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */; };
+		EC404FE318CE7F611D5474BC5520EB07 /* UIScrollView-InfiniteScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D529538601AE4AF79E43704648A27D /* UIScrollView-InfiniteScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F55CAA55B05531D52C1B5A1A566ACA98 /* PBXContainerItemProxy */ = {
+		46E064DCDC56B85FAFF6EC80087C0247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 049B8DFCC672F990354C11B3E7AA1791;
+			remoteGlobalIDString = 2C1F19B968944870C6A5DCA02FA74368;
 			remoteInfo = ReachabilitySwift;
+		};
+		8D56BA09343AD50BDAC1E30E435A9861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5BF296C4ED864A49951CACA463D477;
+			remoteInfo = "UIScrollView-InfiniteScroll";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022DFEACFD5D0041997A86770F17F9C8 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		01265F4714322A3E25A6ADD1104372B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F4F2DB95F355DF2540B893F2D163AE /* Pods-VoyageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoyageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D7D28886E7F1A53A6B897CE334ECB87 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
 		0D90E67F7B147D956CFDBAFADCB9C33C /* Pods-Voyage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voyage.release.xcconfig"; sourceTree = "<group>"; };
 		1110BE57D1C60B4BE340229E9D4881D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161D9B0AD9331060B473D4F43F7DE158 /* Pods-VoyageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoyageTests.release.xcconfig"; sourceTree = "<group>"; };
-		1BB2A29A6FDCDB14FFEAD8642AAFF91B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		275E6C6BD881C64FF5A9275414CDD168 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
-		2FE7197CB87FD87EF885AA4298F2D55B /* Pods_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Voyage.framework; path = "Pods-Voyage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A278A04F60C819C4A7E13A378DF297D /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		2BEF346CD90F16B4C27DBF647B5B724D /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDFB62CE8FBA6F7191D035282942A2E /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
 		408A172A96564553A66177EE6CE0AA21 /* Pods-Voyage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voyage-umbrella.h"; sourceTree = "<group>"; };
+		4ADD96F9E4A353A258756E230DDF0210 /* UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
 		4B661D46B8DCE771645631065760502C /* Pods-VoyageTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VoyageTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A441582CF3587AAD0C54DF85FB1B8F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA51FB5A6352AC0D438129355A67C79 /* Pods-VoyageTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VoyageTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7B0173D02276968EB9711C6BF944032E /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		6D9D53C716F8EC889F786EB189761892 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
 		81D6F7BAF0A1AC222004A06BAA086538 /* Pods-VoyageTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VoyageTests-umbrella.h"; sourceTree = "<group>"; };
+		8A4A39D50D951E6F840D5D47A07ABF3B /* UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
 		8AF803215BB17764CA7963CC755640F3 /* Pods-Voyage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voyage-dummy.m"; sourceTree = "<group>"; };
 		93A1AA9E609D7B0B3F9ABE623B640C65 /* Pods-Voyage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Voyage.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B41AF65833EFCBBAE3DC48976FD015 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
 		97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		97FFA56A484674BAFC176C33E244AC6C /* Pods-VoyageTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VoyageTests-dummy.m"; sourceTree = "<group>"; };
 		A08098D7F54A75A1F5F67C23226D117C /* Pods-Voyage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voyage-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2E2B2CB5F0E602271A086F0906DBB5E /* UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
 		AB5BE76F581763CB24AAE2EEB81A1071 /* Pods-Voyage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voyage.debug.xcconfig"; sourceTree = "<group>"; };
 		AE4EDDD37258FF296A5D64A5F959E5B3 /* Pods-VoyageTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoyageTests-frameworks.sh"; sourceTree = "<group>"; };
-		B69D4187F1B8F1EEEA7A0121DE67F2B7 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
-		BA129018496EAB4F2D31853C6FC3551D /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C6726E7E1204AF177FA9AA069840A4 /* UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
+		B4ECAC8F714D62517A161076A3A78702 /* Pods_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Voyage.framework; path = "Pods-Voyage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87D97BC35F4E6C8F4CC305EE3C9307B /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		B9D529538601AE4AF79E43704648A27D /* UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
 		C4ECBD167047470A90D60873F8835642 /* Pods-VoyageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VoyageTests.modulemap"; sourceTree = "<group>"; };
 		C82FB592D47D766D92BF730625901CC2 /* Pods-Voyage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voyage-frameworks.sh"; sourceTree = "<group>"; };
-		C83B22AA12F333F2726894B4319B4CB2 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
 		D00641231001B92ECED2C5C8C23EEFD2 /* Pods-Voyage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voyage-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DC3AC5AF4460111E6BE7874F9DF4554D /* Pods_VoyageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VoyageTests.framework; path = "Pods-VoyageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		DD121AE7D1A1BFEFD4AEFDDD79D999E1 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
+		DE0B1190B7C24A35E334E34609ED5B23 /* Pods_VoyageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VoyageTests.framework; path = "Pods-VoyageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00B20AB2E7EE3F51CB977CD72C33361 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIScrollView_InfiniteScroll.framework; path = "UIScrollView-InfiniteScroll.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC607AFA05ED28FE0D6CDC62F124F7D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9C6F05B870E51DD474E1F631339FD6 /* Pods-Voyage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voyage-resources.sh"; sourceTree = "<group>"; };
 		F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		F339BE0A0FA9BC14D0FDDA31DACD25A1 /* Pods-VoyageTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoyageTests-resources.sh"; sourceTree = "<group>"; };
+		F4FE0E21248FE23874B68F03CEEEFC39 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53E72A1E213D01CF5534CBCDF0987F74 /* Frameworks */ = {
+		1DDB6851822DF9E7CAD0C087B5623574 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B97B4C7FF3AB536689B24E10C8C5310 /* Foundation.framework in Frameworks */,
+				A935CFB119201D3EBBD154B4FECB3CFC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,18 +104,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1B2F4C08A8BF22178B1BEB19352DB93 /* Frameworks */ = {
+		8C15963ED903539F65F5448005746831 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4F510C48FDC56B49CCDBCCDA704381 /* Foundation.framework in Frameworks */,
-				70CAACAF48D2453AD9E3F0761B165D82 /* SystemConfiguration.framework in Frameworks */,
+				E69801D127273B94720F146FEA9EA0E0 /* Foundation.framework in Frameworks */,
+				50060EF4972A6F20B0869D9706D44388 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3C55365FED83BFB8BA269B6B9167B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C0F8A7A4148189258C499FF45906DC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2E7984318DA416D9CA11E8F66DF21D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A441582CF3587AAD0C54DF85FB1B8F0 /* Info.plist */,
+				F4FE0E21248FE23874B68F03CEEEFC39 /* ReachabilitySwift.modulemap */,
+				2A278A04F60C819C4A7E13A378DF297D /* ReachabilitySwift.xcconfig */,
+				94B41AF65833EFCBBAE3DC48976FD015 /* ReachabilitySwift-dummy.m */,
+				B87D97BC35F4E6C8F4CC305EE3C9307B /* ReachabilitySwift-prefix.pch */,
+				6D9D53C716F8EC889F786EB189761892 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		3D65A30928E859E8F95E5ED26BF79900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4ECAC8F714D62517A161076A3A78702 /* Pods_Voyage.framework */,
+				DE0B1190B7C24A35E334E34609ED5B23 /* Pods_VoyageTests.framework */,
+				2BEF346CD90F16B4C27DBF647B5B724D /* Reachability.framework */,
+				E00B20AB2E7EE3F51CB977CD72C33361 /* UIScrollView_InfiniteScroll.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D8F4A87DAA6A583001D09A9D48B2B67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF22B65A31917A3F31011BCAF83D7DE /* ReachabilitySwift */,
+				D33A727E9EE11FF91CB8E08A95AC85FD /* UIScrollView-InfiniteScroll */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,14 +184,18 @@
 			path = "Target Support Files/Pods-VoyageTests";
 			sourceTree = "<group>";
 		};
-		78957E81B88D8A614D74EE6376131131 /* Products */ = {
+		64A8EF61B71DB4B82AC5C7EF90D3C745 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FE7197CB87FD87EF885AA4298F2D55B /* Pods_Voyage.framework */,
-				DC3AC5AF4460111E6BE7874F9DF4554D /* Pods_VoyageTests.framework */,
-				BA129018496EAB4F2D31853C6FC3551D /* Reachability.framework */,
+				01265F4714322A3E25A6ADD1104372B3 /* Info.plist */,
+				B1C6726E7E1204AF177FA9AA069840A4 /* UIScrollView-InfiniteScroll.modulemap */,
+				4ADD96F9E4A353A258756E230DDF0210 /* UIScrollView-InfiniteScroll.xcconfig */,
+				8A4A39D50D951E6F840D5D47A07ABF3B /* UIScrollView-InfiniteScroll-dummy.m */,
+				A2E2B2CB5F0E602271A086F0906DBB5E /* UIScrollView-InfiniteScroll-prefix.pch */,
+				B9D529538601AE4AF79E43704648A27D /* UIScrollView-InfiniteScroll-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/UIScrollView-InfiniteScroll";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -136,32 +203,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				9BCD5CBAACE7E3EBED55F693896BB924 /* Pods */,
-				78957E81B88D8A614D74EE6376131131 /* Products */,
+				3D8F4A87DAA6A583001D09A9D48B2B67 /* Pods */,
+				3D65A30928E859E8F95E5ED26BF79900 /* Products */,
 				C8E0E9A4C8C0A79F4DAD023226429079 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9BCD5CBAACE7E3EBED55F693896BB924 /* Pods */ = {
+		8AF22B65A31917A3F31011BCAF83D7DE /* ReachabilitySwift */ = {
 			isa = PBXGroup;
 			children = (
-				F47FCCB16BA3F38D5553162F93FAF492 /* ReachabilitySwift */,
+				0D7D28886E7F1A53A6B897CE334ECB87 /* Reachability.swift */,
+				1E2E7984318DA416D9CA11E8F66DF21D /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A9ED4EC8142E9CD679F2F17116535C39 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1BB2A29A6FDCDB14FFEAD8642AAFF91B /* Info.plist */,
-				C83B22AA12F333F2726894B4319B4CB2 /* ReachabilitySwift.modulemap */,
-				E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */,
-				7B0173D02276968EB9711C6BF944032E /* ReachabilitySwift-dummy.m */,
-				022DFEACFD5D0041997A86770F17F9C8 /* ReachabilitySwift-prefix.pch */,
-				275E6C6BD881C64FF5A9275414CDD168 /* ReachabilitySwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ReachabilitySwift";
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
 			sourceTree = "<group>";
 		};
 		C8E0E9A4C8C0A79F4DAD023226429079 /* Targets Support Files */ = {
@@ -171,6 +226,17 @@
 				614DDB2CFD0571BDE014B04176823E5E /* Pods-VoyageTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D33A727E9EE11FF91CB8E08A95AC85FD /* UIScrollView-InfiniteScroll */ = {
+			isa = PBXGroup;
+			children = (
+				DD121AE7D1A1BFEFD4AEFDDD79D999E1 /* UIScrollView+InfiniteScroll.h */,
+				3EDFB62CE8FBA6F7191D035282942A2E /* UIScrollView+InfiniteScroll.m */,
+				64A8EF61B71DB4B82AC5C7EF90D3C745 /* Support Files */,
+			);
+			name = "UIScrollView-InfiniteScroll";
+			path = "UIScrollView-InfiniteScroll";
 			sourceTree = "<group>";
 		};
 		D6E18DC2C6F98042B92C696E4B13A955 /* Pods-Voyage */ = {
@@ -200,24 +266,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F47FCCB16BA3F38D5553162F93FAF492 /* ReachabilitySwift */ = {
-			isa = PBXGroup;
-			children = (
-				B69D4187F1B8F1EEEA7A0121DE67F2B7 /* Reachability.swift */,
-				A9ED4EC8142E9CD679F2F17116535C39 /* Support Files */,
-			);
-			name = ReachabilitySwift;
-			path = ReachabilitySwift;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4DA9B70B17C08D82B22BC37CA24B2442 /* Headers */ = {
+		3D52A2B449943098CB04AA7443E4634E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043B7E5A4BB3F788994409908FBCD768 /* ReachabilitySwift-umbrella.h in Headers */,
+				11D2F5F78A5452CC3082213028362BD7 /* UIScrollView+InfiniteScroll.h in Headers */,
+				EC404FE318CE7F611D5474BC5520EB07 /* UIScrollView-InfiniteScroll-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F87407BBE93E32B408109AF39927AA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230EB2455F789E089DFC5C7FE157D13C /* ReachabilitySwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,24 +294,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB493B3A4A03FA6EFF995329F3078405 /* Headers */ = {
+		B3FA635E6A68D4D370B4E0080A5E1A29 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB3D895EBD0F588279286997AD2EF758 /* Pods-Voyage-umbrella.h in Headers */,
+				740F5263A01E2EB6030BE041DD6D32E5 /* Pods-Voyage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		049B8DFCC672F990354C11B3E7AA1791 /* ReachabilitySwift */ = {
+		2C1F19B968944870C6A5DCA02FA74368 /* ReachabilitySwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDA038C2AD231213CEEDA0A3612A31EF /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildConfigurationList = 999B60D61AD37A93573A35948B3DDD25 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
 			buildPhases = (
-				2E7B79320EDA7AF29AD0AE5295CF00FC /* Sources */,
-				B1B2F4C08A8BF22178B1BEB19352DB93 /* Frameworks */,
-				4DA9B70B17C08D82B22BC37CA24B2442 /* Headers */,
+				407EC220850265F93DEDC56F78F89635 /* Sources */,
+				8C15963ED903539F65F5448005746831 /* Frameworks */,
+				3F87407BBE93E32B408109AF39927AA0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -254,25 +319,24 @@
 			);
 			name = ReachabilitySwift;
 			productName = ReachabilitySwift;
-			productReference = BA129018496EAB4F2D31853C6FC3551D /* Reachability.framework */;
+			productReference = 2BEF346CD90F16B4C27DBF647B5B724D /* Reachability.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0E7C6540239CCEFAB1CB7A5C64D13D4F /* Pods-Voyage */ = {
+		3A5BF296C4ED864A49951CACA463D477 /* UIScrollView-InfiniteScroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC0D0F10A15196C438D39A9DCADFF866 /* Build configuration list for PBXNativeTarget "Pods-Voyage" */;
+			buildConfigurationList = 0FD34D500069B51365764A897039BAB7 /* Build configuration list for PBXNativeTarget "UIScrollView-InfiniteScroll" */;
 			buildPhases = (
-				F81DE97D27BAFC15E3588542DC1E7613 /* Sources */,
-				53E72A1E213D01CF5534CBCDF0987F74 /* Frameworks */,
-				DB493B3A4A03FA6EFF995329F3078405 /* Headers */,
+				AE14B9C387A644183F0E4CB9D5039DAB /* Sources */,
+				DB3C55365FED83BFB8BA269B6B9167B1 /* Frameworks */,
+				3D52A2B449943098CB04AA7443E4634E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2CE59C10CDC3C802CB949F8AED1BD112 /* PBXTargetDependency */,
 			);
-			name = "Pods-Voyage";
-			productName = "Pods-Voyage";
-			productReference = 2FE7197CB87FD87EF885AA4298F2D55B /* Pods_Voyage.framework */;
+			name = "UIScrollView-InfiniteScroll";
+			productName = "UIScrollView-InfiniteScroll";
+			productReference = E00B20AB2E7EE3F51CB977CD72C33361 /* UIScrollView_InfiniteScroll.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6F0A4EA6575C38A5682BF4C5DD3BE5F2 /* Pods-VoyageTests */ = {
@@ -289,7 +353,26 @@
 			);
 			name = "Pods-VoyageTests";
 			productName = "Pods-VoyageTests";
-			productReference = DC3AC5AF4460111E6BE7874F9DF4554D /* Pods_VoyageTests.framework */;
+			productReference = DE0B1190B7C24A35E334E34609ED5B23 /* Pods_VoyageTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FA51A3B75F380B643D6DF9F4EE85230 /* Pods-Voyage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A611E2FC470FCC8C5854955C4F783983 /* Build configuration list for PBXNativeTarget "Pods-Voyage" */;
+			buildPhases = (
+				6076103BA4724A854FC9479CDD9C326D /* Sources */,
+				1DDB6851822DF9E7CAD0C087B5623574 /* Frameworks */,
+				B3FA635E6A68D4D370B4E0080A5E1A29 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C22823C3864B78CA4C18C89C5499B622 /* PBXTargetDependency */,
+				9BCC1F2EEA55FD1610931A3EE206756C /* PBXTargetDependency */,
+			);
+			name = "Pods-Voyage";
+			productName = "Pods-Voyage";
+			productReference = B4ECAC8F714D62517A161076A3A78702 /* Pods_Voyage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,24 +392,33 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 78957E81B88D8A614D74EE6376131131 /* Products */;
+			productRefGroup = 3D65A30928E859E8F95E5ED26BF79900 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E7C6540239CCEFAB1CB7A5C64D13D4F /* Pods-Voyage */,
+				9FA51A3B75F380B643D6DF9F4EE85230 /* Pods-Voyage */,
 				6F0A4EA6575C38A5682BF4C5DD3BE5F2 /* Pods-VoyageTests */,
-				049B8DFCC672F990354C11B3E7AA1791 /* ReachabilitySwift */,
+				2C1F19B968944870C6A5DCA02FA74368 /* ReachabilitySwift */,
+				3A5BF296C4ED864A49951CACA463D477 /* UIScrollView-InfiniteScroll */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E7B79320EDA7AF29AD0AE5295CF00FC /* Sources */ = {
+		407EC220850265F93DEDC56F78F89635 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A88D4D046784868D5F1FAECB6BFDB0 /* Reachability.swift in Sources */,
-				D038C3E8210E3C0AA778083702400D49 /* ReachabilitySwift-dummy.m in Sources */,
+				3F18A7027DA6E93B17A479036EF0457C /* Reachability.swift in Sources */,
+				A1C9015E2884F99F71FE33A62FB1170C /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6076103BA4724A854FC9479CDD9C326D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D405EC67278B6D86813AB97051EF1A /* Pods-Voyage-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,26 +430,98 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F81DE97D27BAFC15E3588542DC1E7613 /* Sources */ = {
+		AE14B9C387A644183F0E4CB9D5039DAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0647523403AF3689B514D15F55BB336C /* Pods-Voyage-dummy.m in Sources */,
+				09EA6F76D8BFD3EA74FFC72520A6C141 /* UIScrollView+InfiniteScroll.m in Sources */,
+				207C2CEA956BECBE3ED90C0CE868847B /* UIScrollView-InfiniteScroll-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2CE59C10CDC3C802CB949F8AED1BD112 /* PBXTargetDependency */ = {
+		9BCC1F2EEA55FD1610931A3EE206756C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIScrollView-InfiniteScroll";
+			target = 3A5BF296C4ED864A49951CACA463D477 /* UIScrollView-InfiniteScroll */;
+			targetProxy = 8D56BA09343AD50BDAC1E30E435A9861 /* PBXContainerItemProxy */;
+		};
+		C22823C3864B78CA4C18C89C5499B622 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ReachabilitySwift;
-			target = 049B8DFCC672F990354C11B3E7AA1791 /* ReachabilitySwift */;
-			targetProxy = F55CAA55B05531D52C1B5A1A566ACA98 /* PBXContainerItemProxy */;
+			target = 2C1F19B968944870C6A5DCA02FA74368 /* ReachabilitySwift */;
+			targetProxy = 46E064DCDC56B85FAFF6EC80087C0247 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0E4D8D1FDADA3CBE9532ACC1B08E2681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5BE76F581763CB24AAE2EEB81A1071 /* Pods-Voyage.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voyage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Voyage/Pods-Voyage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Voyage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		396EF7F8DE5D87D557184F9C8EDA4847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADD96F9E4A353A258756E230DDF0210 /* UIScrollView-InfiniteScroll.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIScrollView-InfiniteScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll.modulemap";
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +579,103 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4B5CE0285EF542B71340AF47C0316C89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D90E67F7B147D956CFDBAFADCB9C33C /* Pods-Voyage.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voyage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Voyage/Pods-Voyage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Voyage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		524A4E3D77406B8E80D893DD9EB01D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A278A04F60C819C4A7E13A378DF297D /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5355F38C1621859C19A72A0F9C6340CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A278A04F60C819C4A7E13A378DF297D /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -506,74 +767,6 @@
 			};
 			name = Release;
 		};
-		8CE0C03B696F8AF466CC10234C538778 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D90E67F7B147D956CFDBAFADCB9C33C /* Pods-Voyage.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voyage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Voyage/Pods-Voyage.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Voyage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9029E643524266229F617CAAA4740B37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB5BE76F581763CB24AAE2EEB81A1071 /* Pods-Voyage.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voyage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Voyage/Pods-Voyage.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Voyage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A3B3BFA04E24E5084E34B5B05FEEE06F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05F4F2DB95F355DF2540B893F2D163AE /* Pods-VoyageTests.debug.xcconfig */;
@@ -606,9 +799,9 @@
 			};
 			name = Debug;
 		};
-		C002CA83772DDEAB3B55FEDF8A920C9E /* Debug */ = {
+		B23A357EFEBAD198C101C3AEDD16F16F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */;
+			baseConfigurationReference = 4ADD96F9E4A353A258756E230DDF0210 /* UIScrollView-InfiniteScroll.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -619,17 +812,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIScrollView-InfiniteScroll/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
-				PRODUCT_NAME = Reachability;
+				MODULEMAP_FILE = "Target Support Files/UIScrollView-InfiniteScroll/UIScrollView-InfiniteScroll.modulemap";
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -637,41 +829,18 @@
 			};
 			name = Debug;
 		};
-		DDE1BEBBD58F0CE028D27DD5CC2D1842 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2D2A444FC528FC0D4C80F57A3D32F88 /* ReachabilitySwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
-				PRODUCT_NAME = Reachability;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0FD34D500069B51365764A897039BAB7 /* Build configuration list for PBXNativeTarget "UIScrollView-InfiniteScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23A357EFEBAD198C101C3AEDD16F16F /* Debug */,
+				396EF7F8DE5D87D557184F9C8EDA4847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -690,20 +859,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC0D0F10A15196C438D39A9DCADFF866 /* Build configuration list for PBXNativeTarget "Pods-Voyage" */ = {
+		999B60D61AD37A93573A35948B3DDD25 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9029E643524266229F617CAAA4740B37 /* Debug */,
-				8CE0C03B696F8AF466CC10234C538778 /* Release */,
+				5355F38C1621859C19A72A0F9C6340CB /* Debug */,
+				524A4E3D77406B8E80D893DD9EB01D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDA038C2AD231213CEEDA0A3612A31EF /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+		A611E2FC470FCC8C5854955C4F783983 /* Build configuration list for PBXNativeTarget "Pods-Voyage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C002CA83772DDEAB3B55FEDF8A920C9E /* Debug */,
-				DDE1BEBBD58F0CE028D27DD5CC2D1842 /* Release */,
+				0E4D8D1FDADA3CBE9532ACC1B08E2681 /* Debug */,
+				4B5CE0285EF542B71340AF47C0316C89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@ target 'Voyage' do
 
   # Pods for Voyage
   pod 'ReachabilitySwift'
+  pod 'UIScrollView-InfiniteScroll'
 
   target 'VoyageTests' do
     inherit! :search_paths
