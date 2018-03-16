@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIScrollView_InfiniteScroll
 
 class TouristSitesVC: UIViewController {
 
@@ -25,7 +26,6 @@ class TouristSitesVC: UIViewController {
         super.viewDidLoad()
 
         touristSiteProvider = TouristSiteProvider()
-        fetchTouristSites()
         
         configureTableView()
         configureNavigationBar()
@@ -52,6 +52,10 @@ class TouristSitesVC: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "TouristSiteTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.addInfiniteScroll { [unowned self] (tableView) in
+            self.fetchTouristSites()
+            tableView.finishInfiniteScroll()
+        }
     }
 
     private func configureNavigationBar() {
@@ -120,11 +124,7 @@ extension TouristSitesVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8.0
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 8.0
+        return section == 0 ? 8.0 : 16.0
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
