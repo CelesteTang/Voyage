@@ -8,7 +8,11 @@
 
 import Foundation
 
-class TouristSiteProvider {
+protocol TouristSiteProvidable {
+    func getTouristSites(completionHandler: @escaping ([TouristSite]?, Error?) -> Swift.Void)
+}
+
+class TouristSiteProvider: TouristSiteProvidable {
     
     var dataLoader: NetworkService
     private var requestToken: RequestToken? = nil
