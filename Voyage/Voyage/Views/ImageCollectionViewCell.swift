@@ -15,6 +15,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        imageView.image = #imageLiteral(resourceName: "imagePlaceholder")
     }
 
     func configure(image: UIImage) {

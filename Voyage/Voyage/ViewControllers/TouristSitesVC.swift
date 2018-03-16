@@ -20,7 +20,9 @@ class TouristSitesVC: UIViewController {
     }
 
     private var touristSiteProvider: TouristSiteProvider? = nil
-
+    var indicator: UIActivityIndicatorView?
+    let fullSize = UIScreen.main.bounds
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,7 @@ class TouristSitesVC: UIViewController {
         
         configureTableView()
         configureNavigationBar()
+        configureIndicator()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +80,8 @@ class TouristSitesVC: UIViewController {
             DispatchQueue.main.async {
                 if let touristSites = touristSites {
                     self.touristSites.append(contentsOf: touristSites)
+                    self.tableView.isHidden = false
+                    self.indicator?.stopAnimating()
                     self.tableView.reloadData()
                 }
             }
@@ -89,6 +94,16 @@ class TouristSitesVC: UIViewController {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+    
+    private func configureIndicator() {
+        indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        indicator?.center = CGPoint(x: fullSize.width / 2, y: fullSize.height / 2)
+        view.addSubview(indicator!)
+        if noData {
+            tableView.isHidden = true
+            indicator?.startAnimating()
+        }
     }
 }
 
