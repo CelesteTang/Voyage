@@ -12,7 +12,7 @@ class RequestToken {
     
     private weak var task: URLSessionTask?
     
-    init(task: URLSessionTask) {
+    init(task: URLSessionTask? = nil) {
         
         self.task = task
     }

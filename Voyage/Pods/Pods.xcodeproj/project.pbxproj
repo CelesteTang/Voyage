@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,7 +50,7 @@
 		1110BE57D1C60B4BE340229E9D4881D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161D9B0AD9331060B473D4F43F7DE158 /* Pods-VoyageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VoyageTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A278A04F60C819C4A7E13A378DF297D /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
-		2BEF346CD90F16B4C27DBF647B5B724D /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEF346CD90F16B4C27DBF647B5B724D /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDFB62CE8FBA6F7191D035282942A2E /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
 		408A172A96564553A66177EE6CE0AA21 /* Pods-Voyage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voyage-umbrella.h"; sourceTree = "<group>"; };
 		4ADD96F9E4A353A258756E230DDF0210 /* UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
@@ -61,8 +61,8 @@
 		81D6F7BAF0A1AC222004A06BAA086538 /* Pods-VoyageTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VoyageTests-umbrella.h"; sourceTree = "<group>"; };
 		8A4A39D50D951E6F840D5D47A07ABF3B /* UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
 		8AF803215BB17764CA7963CC755640F3 /* Pods-Voyage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voyage-dummy.m"; sourceTree = "<group>"; };
-		93A1AA9E609D7B0B3F9ABE623B640C65 /* Pods-Voyage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Voyage.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A1AA9E609D7B0B3F9ABE623B640C65 /* Pods-Voyage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voyage.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94B41AF65833EFCBBAE3DC48976FD015 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
 		97D7E984AA2ED06FC886024282B47207 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		97FFA56A484674BAFC176C33E244AC6C /* Pods-VoyageTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VoyageTests-dummy.m"; sourceTree = "<group>"; };
@@ -70,21 +70,21 @@
 		A2E2B2CB5F0E602271A086F0906DBB5E /* UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
 		AB5BE76F581763CB24AAE2EEB81A1071 /* Pods-Voyage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voyage.debug.xcconfig"; sourceTree = "<group>"; };
 		AE4EDDD37258FF296A5D64A5F959E5B3 /* Pods-VoyageTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoyageTests-frameworks.sh"; sourceTree = "<group>"; };
-		B1C6726E7E1204AF177FA9AA069840A4 /* UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
-		B4ECAC8F714D62517A161076A3A78702 /* Pods_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Voyage.framework; path = "Pods-Voyage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C6726E7E1204AF177FA9AA069840A4 /* UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
+		B4ECAC8F714D62517A161076A3A78702 /* Pods_Voyage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voyage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87D97BC35F4E6C8F4CC305EE3C9307B /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		B9D529538601AE4AF79E43704648A27D /* UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
-		C4ECBD167047470A90D60873F8835642 /* Pods-VoyageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VoyageTests.modulemap"; sourceTree = "<group>"; };
+		C4ECBD167047470A90D60873F8835642 /* Pods-VoyageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VoyageTests.modulemap"; sourceTree = "<group>"; };
 		C82FB592D47D766D92BF730625901CC2 /* Pods-Voyage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voyage-frameworks.sh"; sourceTree = "<group>"; };
 		D00641231001B92ECED2C5C8C23EEFD2 /* Pods-Voyage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voyage-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DD121AE7D1A1BFEFD4AEFDDD79D999E1 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
-		DE0B1190B7C24A35E334E34609ED5B23 /* Pods_VoyageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VoyageTests.framework; path = "Pods-VoyageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E00B20AB2E7EE3F51CB977CD72C33361 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIScrollView_InfiniteScroll.framework; path = "UIScrollView-InfiniteScroll.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0B1190B7C24A35E334E34609ED5B23 /* Pods_VoyageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoyageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00B20AB2E7EE3F51CB977CD72C33361 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC607AFA05ED28FE0D6CDC62F124F7D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9C6F05B870E51DD474E1F631339FD6 /* Pods-Voyage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voyage-resources.sh"; sourceTree = "<group>"; };
 		F2AF9EC704AAD470CAC8FE0D05A5430B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		F339BE0A0FA9BC14D0FDDA31DACD25A1 /* Pods-VoyageTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VoyageTests-resources.sh"; sourceTree = "<group>"; };
-		F4FE0E21248FE23874B68F03CEEEFC39 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		F4FE0E21248FE23874B68F03CEEEFC39 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,6 @@
 				0D7D28886E7F1A53A6B897CE334ECB87 /* Reachability.swift */,
 				1E2E7984318DA416D9CA11E8F66DF21D /* Support Files */,
 			);
-			name = ReachabilitySwift;
 			path = ReachabilitySwift;
 			sourceTree = "<group>";
 		};
@@ -235,7 +234,6 @@
 				3EDFB62CE8FBA6F7191D035282942A2E /* UIScrollView+InfiniteScroll.m */,
 				64A8EF61B71DB4B82AC5C7EF90D3C745 /* Support Files */,
 			);
-			name = "UIScrollView-InfiniteScroll";
 			path = "UIScrollView-InfiniteScroll";
 			sourceTree = "<group>";
 		};
@@ -382,7 +380,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -763,6 +761,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

@@ -10,12 +10,12 @@ import Foundation
 
 class TouristSiteProvider {
     
-    private var dataLoader: DataLoader? = nil
+    var dataLoader: NetworkService
     private var requestToken: RequestToken? = nil
     private var offset = 0
     
-    init() {
-        dataLoader = DataLoader()
+    init(dataLoader: NetworkService) {
+        self.dataLoader = dataLoader
     }
     
     func getTouristSites(completionHandler: @escaping ([TouristSite]?, Error?) -> Swift.Void) {
@@ -25,7 +25,7 @@ class TouristSiteProvider {
             return
         }
         
-        requestToken = dataLoader?.getData(url: url, completionHandler: { [unowned self] result in
+        requestToken = dataLoader.getData(url: url, headers: nil, completionHandler: { [unowned self] result in
             
             switch result {
                 

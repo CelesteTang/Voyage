@@ -27,7 +27,7 @@ class TouristSitesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        touristSiteProvider = TouristSiteProvider()
+        touristSiteProvider = TouristSiteProvider(dataLoader: DataLoader())
         
         configureTableView()
         configureNavigationBar()

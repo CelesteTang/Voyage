@@ -25,7 +25,14 @@ enum Result<T> {
     case error(Error)
 }
 
-class DataLoader {
+protocol NetworkService {
+    
+    @discardableResult
+    func getData(url: URL, headers: [String: String]?,
+                 completionHandler: @escaping (Result<Data>) -> Void) -> RequestToken
+}
+
+class DataLoader: NetworkService {
     
     var session: URLSession
     
