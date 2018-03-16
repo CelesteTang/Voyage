@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		254A92360A9205DF7F5FBC99 /* Pods_VoyageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03C9218B6C87D9C5839B58B /* Pods_VoyageTests.framework */; };
 		430596E7205AB08E0021CE9C /* ReachabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */; };
+		430596EC205B72BC0021CE9C /* DataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430596EB205B72BC0021CE9C /* DataLoaderTests.swift */; };
+		430596EE205B75280021CE9C /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430596ED205B75280021CE9C /* StringExtensionTests.swift */; };
 		432E472D2059810800E22925 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432E472C2059810800E22925 /* ImageCache.swift */; };
 		436585592057FDE7009F430B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436585582057FDE7009F430B /* AppDelegate.swift */; };
 		4365855B2057FDE7009F430B /* TouristSitesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365855A2057FDE7009F430B /* TouristSitesVC.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		430596E6205AB08E0021CE9C /* ReachabilityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMonitor.swift; sourceTree = "<group>"; };
+		430596EB205B72BC0021CE9C /* DataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTests.swift; sourceTree = "<group>"; };
+		430596ED205B75280021CE9C /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		432E472C2059810800E22925 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		436585552057FDE7009F430B /* Voyage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436585582057FDE7009F430B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				4365856D2057FDE7009F430B /* VoyageTests.swift */,
+				430596EB205B72BC0021CE9C /* DataLoaderTests.swift */,
+				430596ED205B75280021CE9C /* StringExtensionTests.swift */,
 				4365856F2057FDE7009F430B /* Info.plist */,
 			);
 			path = VoyageTests;
@@ -450,7 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430596EC205B72BC0021CE9C /* DataLoaderTests.swift in Sources */,
 				4365856E2057FDE7009F430B /* VoyageTests.swift in Sources */,
+				430596EE205B75280021CE9C /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

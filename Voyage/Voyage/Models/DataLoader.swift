@@ -27,7 +27,11 @@ enum Result<T> {
 
 class DataLoader {
     
-    let session = URLSession.shared
+    var session: URLSession
+    
+    init(session: URLSession = URLSession.shared) {
+        self.session = session
+    }
     
     @discardableResult
     func getData(url: URL, headers: [String: String]? = nil,
